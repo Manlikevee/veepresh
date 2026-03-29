@@ -478,9 +478,7 @@ function updateQuizMeta() {
 }
 
 function renderQuestion() {
-const originalQ = questions[current];
-const q = shuffleOptions(originalQ);
-  const isSubmitted = submitted[current];
+const q = questions[current]; const isSubmitted = submitted[current];
  
   document.getElementById('questionNumber').textContent = `Question ${pad(current + 1)}`;
   document.getElementById('currentQ').textContent = current + 1;
