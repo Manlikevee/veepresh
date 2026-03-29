@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Educational Assessment Quiz Template</title>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&amp;family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&amp;display=swap'><link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <!-- Header -->
+<header class="quiz-header">
+ 
+ 
+  <div class="quiz-meta">
+    <div class="quiz-category">Module 4 · Learning Sciences</div>
+    <h1 class="quiz-title">Online Assessment & LMS Fundamentals</h1>
+    <p class="quiz-description">Test your understanding of graded vs. practice assessment formats, LMS platforms, and research-backed best practices in online learning design.</p>
+    <div class="quiz-stats">
+      <div class="stat-item">
+        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        <span><strong>8 minutes</strong> estimated</span>
+      </div>
+      <div class="stat-item">
+        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+        <span><strong>5 questions</strong></span>
+      </div>
+      <div class="stat-item">
+        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        <span><strong>25 points</strong> total</span>
+      </div>
+      <div class="stat-item">
+        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        <span>Pass threshold: <strong>70%</strong></span>
+      </div>
+    </div>
+  </div>
+</header>
+ 
+<!-- Progress -->
+<div class="progress-wrapper" id="progressWrapper">
+  <div class="progress-row">
+    <span class="progress-label">Progress</span>
+    <div style="display:flex;align-items:center;gap:16px;">
+      <div class="timer-chip" id="timerChip">
+        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        <span id="timerDisplay">8:00</span>
+      </div>
+      <span class="progress-fraction"><span id="currentQ">1</span> of <span id="totalQ">5</span></span>
+    </div>
+  </div>
+  <div class="progress-track">
+    <div class="progress-fill" id="progressFill" style="width:20%"></div>
+  </div>
+</div>
+ 
+<!-- Question Card -->
+<div class="question-card" id="questionCard">
+  <div class="question-card-header">
+    <span class="question-number" id="questionNumber">Question 01</span>
+    <span class="question-type-tag tag-multiple" id="questionTypeTag">Multiple Choice</span>
+  </div>
+  <div class="question-body" id="questionBody">
+    <!-- injected by JS -->
+  </div>
+  <div class="question-card-footer">
+    <div class="footer-left">
+      <span class="points-badge" id="pointsBadge">5 pts</span>
+      <button class="skip-btn" id="skipBtn" onclick="skipQuestion()">Skip question</button>
+    </div>
+    <div style="display:flex;gap:10px;">
+      <button class="btn-secondary hidden" id="prevBtn" onclick="prevQuestion()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back
+      </button>
+      <button class="btn-primary" id="nextBtn" onclick="nextQuestion()">
+        Submit Answer
+        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+      </button>
+    </div>
+  </div>
+</div>
+ 
+<!-- Results Screen -->
+<div class="results-screen" id="resultsScreen">
+  <div class="results-card">
+    <div class="results-header" id="resultsHeader">
+      <div class="result-icon" id="resultIcon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+      </div>
+      <div class="result-title" id="resultTitle">Assessment Complete</div>
+      <div class="result-subtitle" id="resultSubtitle">Great work on this module</div>
+      <div class="result-score-row">
+        <div class="result-score-num" id="resultScoreNum">0</div>
+        <div class="result-score-denom" id="resultScoreDenom">/25</div>
+      </div>
+    </div>
+    <div class="results-body">
+      <div class="stats-grid">
+        <div class="stat-block">
+          <div class="stat-block-num" id="statCorrect">—</div>
+          <div class="stat-block-label">Correct</div>
+        </div>
+        <div class="stat-block">
+          <div class="stat-block-num" id="statIncorrect">—</div>
+          <div class="stat-block-label">Incorrect</div>
+        </div>
+        <div class="stat-block">
+          <div class="stat-block-num" id="statPercent">—</div>
+          <div class="stat-block-label">Score %</div>
+        </div>
+      </div>
+      <div class="answer-review">
+        <div class="review-header">Answer Review</div>
+        <div id="reviewList"></div>
+      </div>
+      <div class="results-actions">
+        <button class="btn-primary" onclick="retakeQuiz()">
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 .49-4.5"/></svg>
+          Retake Assessment
+        </button>
+        <button class="btn-secondary" onclick="alert('Results submitted to gradebook!')">
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          Submit to Gradebook
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
