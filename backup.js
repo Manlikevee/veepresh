@@ -1,38 +1,6 @@
-function crazyshufflearray(arr, count = arr.length) {
-
-  let result = [...arr];
-
-  // Shuffle
-  result.sort(() => Math.random() - 0.5);
-
-  // Reverse
-  result.reverse();
-
-  // Split into chunks
-  let mid = Math.floor(result.length / 2);
-
-  let first = result.slice(0, mid);
-  let second = result.slice(mid);
-
-  // Reverse both halves
-  first.reverse();
-  second.reverse();
-
-  // Swap the halves
-  result = [...second, ...first];
-
-  // Shuffle again
-  result.sort(() => Math.random() - 0.5);
-
-  // Make sure count is never greater than array length
-  count = Math.min(
-    Math.max(Number(count) || 0, 0),
-    result.length
-  );
-
-  // Return requested number
-  return result.slice(0, count);
-}
+// function shuffleArray(arr) {
+//   return arr.sort(() => Math.random() - 0.5);
+// }
 
 function shuffleArray(arr) {
   const array = [...arr];
@@ -46,6 +14,8 @@ function shuffleArray(arr) {
 }
 
 const questionBank = 
+
+
 [
   {
     type: 'multiple',
@@ -866,63 +836,12 @@ const questionBank =
 // let timerInterval;
 // let secondsLeft = questions.length * 30;
  
-let allocatedQuestions = 0;
 
 function prepareQuiz() {
 
-  const maxQuestions = questionBank.length;
+  const shuffledQuestions = shuffleArray(questionBank);
 
-  let input;
-
-  while (true) {
-
-    input = prompt(
-      `How many questions would you like to answer?\n\n` +
-      `Minimum: 10\n` +
-      `Maximum: ${maxQuestions}`
-    );
-
-    // User cancelled
-    if (input === null) {
-      return false;
-    }
-
-    allocatedQuestions = parseInt(input, 10);
-
-    // Validate
-    if (
-      !Number.isInteger(allocatedQuestions) ||
-      allocatedQuestions < 10 ||
-      allocatedQuestions > maxQuestions
-    ) {
-
-      alert(
-        `Please enter a number between 10 and ${maxQuestions}.`
-      );
-
-      continue;
-    }
-
-    break;
-  }
-
-
-
-  // const shuffledQuestion = shuffleArray(questionBank);
-  // const shuffledQuestions = shuffledQuestion.slice(0, allocatedquestions);
-  // alert(allocatedquestions)
-
-    const shuffledQuestions =
-    crazyshufflearray(questionBank);
-
-      const selectedQuestions =
-    shuffledQuestions.slice(
-      0,
-      allocatedQuestions
-    );
-
-
-  return selectedQuestions.map(q => {
+  return shuffledQuestions.map(q => {
 
     // Only shuffle options for multiple-choice questions
     if (q.type !== 'multiple') {
@@ -983,7 +902,7 @@ let timerInterval;
 // 30 seconds per question
 let secondsLeft = questions.length * 30;
 
-
+alert(questions.length)
 console.log(questions)
 
 // ============================================================
@@ -1238,310 +1157,50 @@ function skipQuestion() {
  
 function showResults() {
   clearInterval(timerInterval);
-
   document.getElementById('questionCard').style.display = 'none';
   document.getElementById('progressWrapper').style.display = 'none';
-
-  // ==========================================================
-  // SELECTED QUIZ QUESTIONS
-  // ==========================================================
-
-  const totalQuestions = questions.length;
-
-
-  // ==========================================================
-  // SCORE VARIABLES
-  // ==========================================================
-
-  let totalPts = 0;
-  let correctCount = 0;
-  let incorrectCount = 0;
-  let skippedCount = 0;
-
-
-  // Maximum points for ONLY the selected questions
-  const maxPts = questions.reduce(
-    (sum, q) => sum + (q.points || 0),
-    0
-  );
-
-
-  // ==========================================================
-  // CHECK EACH SELECTED QUESTION
-  // ==========================================================
-
+ 
+  let totalPts = 0, correctCount = 0, incorrectCount = 0, skippedCount = 0;
+  const maxPts = questions.reduce((s, q) => s + q.points, 0);
+ 
   questions.forEach((q, i) => {
-
-    // Skipped / unanswered
-    if (
-      skipped[i] ||
-      answers[i] === null
-    ) {
-
-      skippedCount++;
-
-      return;
-    }
-
-
-    // Correct
-    if (
-      checkCorrect(q, answers[i])
-    ) {
-
-      correctCount++;
-
-      totalPts += q.points || 0;
-
-    }
-
-    // Incorrect
-    else {
-
-      incorrectCount++;
-
-    }
-
+    if (skipped[i] || answers[i] === null) { skippedCount++; return; }
+    if (checkCorrect(q, answers[i])) { correctCount++; totalPts += q.points; }
+    else incorrectCount++;
   });
-
-
-  // ==========================================================
-  // CALCULATE PERCENTAGE
-  // ==========================================================
-
-  const pct =
-    maxPts > 0
-      ? Math.round(
-          (totalPts / maxPts) * 100
-        )
-      : 0;
-
-
-  // 70% pass threshold
+ 
+  const pct = Math.round((totalPts / maxPts) * 100);
   const passed = pct >= 70;
-
-
-  // ==========================================================
-  // SCORE DISPLAY
-  // ==========================================================
-
-  document.getElementById(
-    'resultScoreNum'
-  ).textContent = totalPts;
-
-
-  document.getElementById(
-    'resultScoreDenom'
-  ).textContent = `/${maxPts}`;
-
-
-  // ==========================================================
-  // RESULT TITLE
-  // ==========================================================
-
-  document.getElementById(
-    'resultTitle'
-  ).textContent =
-    passed
-      ? 'Assessment Passed!'
-      : 'Assessment Complete';
-
-
-  // ==========================================================
-  // RESULT SUBTITLE
-  // ==========================================================
-
-  document.getElementById(
-    'resultSubtitle'
-  ).textContent =
-    passed
-      ? `You scored ${pct}% — above the 70% threshold`
-      : `You scored ${pct}% — below the 70% pass threshold`;
-
-
-  // ==========================================================
-  // STATISTICS
-  // ==========================================================
-
-  document.getElementById(
-    'statCorrect'
-  ).textContent = correctCount;
-
-
-  document.getElementById(
-    'statIncorrect'
-  ).textContent = incorrectCount;
-
-
-  document.getElementById(
-    'statPercent'
-  ).textContent = `${pct}%`;
-
-
-  // ==========================================================
-  // OPTIONAL: SHOW SELECTED QUESTION COUNT
-  // ==========================================================
-
-  const resultQuestionCount =
-    document.getElementById(
-      'resultQuestionCount'
-    );
-
-  if (resultQuestionCount) {
-
-    resultQuestionCount.textContent =
-      `${totalQuestions} questions`;
-
-  }
-
-
-  // ==========================================================
-  // FAILED RESULT HEADER
-  // ==========================================================
-
-  const header =
-    document.getElementById(
-      'resultsHeader'
-    );
-
-
+ 
+  document.getElementById('resultScoreNum').textContent = totalPts;
+  document.getElementById('resultScoreDenom').textContent = `/${maxPts}`;
+  document.getElementById('resultTitle').textContent = passed ? 'Assessment Passed!' : 'Assessment Complete';
+  document.getElementById('resultSubtitle').textContent = passed ? `You scored ${pct}% — above the 70% threshold` : `You scored ${pct}% — below the 70% pass threshold`;
+  document.getElementById('statCorrect').textContent = correctCount;
+  document.getElementById('statIncorrect').textContent = incorrectCount;
+  document.getElementById('statPercent').textContent = `${pct}%`;
+ 
   if (!passed) {
-
-    header.style.background =
-      pct >= 50
-        ? '#C07A12'
-        : '#D63B3B';
-
-
-    document.getElementById(
-      'resultIcon'
-    ).innerHTML = `
-
-      <svg xmlns="http://www.w3.org/2000/svg"
-           width="30"
-           height="30"
-           viewBox="0 0 24 24"
-           fill="none"
-           stroke="white"
-           stroke-width="2.5"
-           stroke-linecap="round"
-           stroke-linejoin="round">
-
-        <circle
-          cx="12"
-          cy="12"
-          r="10"
-        />
-
-        <line
-          x1="12"
-          y1="8"
-          x2="12"
-          y2="12"
-        />
-
-        <line
-          x1="12"
-          y1="16"
-          x2="12.01"
-          y2="16"
-        />
-
-      </svg>
-
-    `;
-
+    const header = document.getElementById('resultsHeader');
+    header.style.background = pct >= 50 ? '#C07A12' : '#D63B3B';
+    document.getElementById('resultIcon').innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>`;
   }
-
-
-  // ==========================================================
-  // REVIEW LIST
-  // ==========================================================
-
-  const reviewList =
-    document.getElementById(
-      'reviewList'
-    );
-
-
-  reviewList.innerHTML =
-    questions.map((q, i) => {
-
-      let status;
-      let cls;
-
-
-      // Skipped
-      if (
-        skipped[i] ||
-        answers[i] === null
-      ) {
-
-        status = 'Skipped';
-        cls = 'skipped';
-
-      }
-
-
-      // Correct
-      else if (
-        checkCorrect(
-          q,
-          answers[i]
-        )
-      ) {
-
-        status = 'Correct';
-        cls = 'correct';
-
-      }
-
-
-      // Incorrect
-      else {
-
-        status = 'Incorrect';
-        cls = 'incorrect';
-
-      }
-
-
-      // Short question text
-      const short =
-        q.text.length > 60
-          ? q.text.slice(0, 60) + '…'
-          : q.text;
-
-
-      return `
-
-        <div class="review-item">
-
-          <div class="review-dot ${cls}">
-          </div>
-
-          <span class="review-q">
-            Q${i + 1} — ${short}
-          </span>
-
-          <span class="review-status ${cls}">
-            ${status}
-          </span>
-
-        </div>
-
-      `;
-
-    }).join('');
-
-
-  // ==========================================================
-  // SHOW RESULTS SCREEN
-  // ==========================================================
-
-  document.getElementById(
-    'resultsScreen'
-  ).style.display = 'block';
+ 
+  const reviewList = document.getElementById('reviewList');
+  reviewList.innerHTML = questions.map((q, i) => {
+    let status, cls;
+    if (skipped[i] || answers[i] === null) { status = 'Skipped'; cls = 'skipped'; }
+    else if (checkCorrect(q, answers[i])) { status = 'Correct'; cls = 'correct'; }
+    else { status = 'Incorrect'; cls = 'incorrect'; }
+    const short = q.text.length > 60 ? q.text.slice(0, 60) + '…' : q.text;
+    return `<div class="review-item">
+      <div class="review-dot ${cls}"></div>
+      <span class="review-q">Q${i+1} — ${short}</span>
+      <span class="review-status ${cls}">${status}</span>
+    </div>`;
+  }).join('');
+ 
+  document.getElementById('resultsScreen').style.display = 'block';
 }
  
 function retakeQuiz() {
