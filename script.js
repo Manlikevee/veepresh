@@ -48,812 +48,2582 @@ function shuffleArray(arr) {
 const questionBank = 
 [
   {
+    "type": "multiple",
+    "text": "The causative agent of Poliomyelitis is:",
+    "options": [
+      "Varicella-Zoster Virus",
+      "Poliovirus",
+      "Hepatitis B Virus",
+      "Variola virus"
+    ],
+    "correct": 1,
+    "points": 5,
+    "feedback": "Poliovirus is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "Which is NOT a type of viral vaccine currently available?",
+    "options": [
+      "Attenuated live viruses",
+      "Killed viruses",
+      "Recombinant produced antigens",
+      "Bacterial toxoids"
+    ],
+    "correct": 3,
+    "points": 5,
+    "feedback": "Bacterial toxoids is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "In 1898, Martinus Beijerinck described the infectious agent as a:",
+    "options": [
+      "Bacterium",
+      "filterable virus",
+      "Fungus",
+      "Toxin"
+    ],
+    "correct": 1,
+    "points": 5,
+    "feedback": "filterable virus is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "A symptom of Chickenpox is:",
+    "options": [
+      "Paralysis",
+      "Small vesicles on the face or upper trunk filled with pus",
+      "Jaundice",
+      "Acute onset of fever"
+    ],
+    "correct": 1,
+    "points": 5,
+    "feedback": "Small vesicles on the face or upper trunk filled with pus is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "The Chamberland filter was originally intended for:",
+    "options": [
+      "Virus culture",
+      "Purification of water by filtering out bacteria",
+      "Vaccine production",
+      "Staining microbes"
+    ],
+    "correct": 1,
+    "points": 5,
+    "feedback": "Purification of water by filtering out bacteria is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "Cucumber Mosaic Virus (CMV) is transmitted by:",
+    "options": [
+      "Thrips",
+      "Aphids",
+      "Insects and physical damage",
+      "Whitefly"
+    ],
+    "correct": 1,
+    "points": 5,
+    "feedback": "Aphids is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "Active immunity is achieved by:",
+    "options": [
+      "Administering antibodies from another host",
+      "Stimulating the body's immune system to produce its own antibodies",
+      "Using gamma globulin",
+      "Vector control"
+    ],
+    "correct": 1,
+    "points": 5,
+    "feedback": "Stimulating the body's immune system to produce its own antibodies is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "In 1915, Frederick Twort discovered:",
+    "options": [
+      "Tobacco Mosaic Virus",
+      "Bacteriophages - viruses that attack bacteria",
+      "Rabies virus",
+      "Poliovirus"
+    ],
+    "correct": 1,
+    "points": 5,
+    "feedback": "Bacteriophages - viruses that attack bacteria is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "Potato Spindle Tuber Viroid (PSTV) causes:",
+    "options": [
+      "Mosaic pattern on leaves",
+      "Stunted growth, spindle-shaped tubers, smaller tubers",
+      "Yellow spots",
+      "Bud blight"
+    ],
+    "correct": 1,
+    "points": 5,
+    "feedback": "Stunted growth, spindle-shaped tubers, smaller tubers is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "Pasteur's first human patient treated with the rabies vaccine was:",
+    "options": [
+      "A scientist",
+      "A dog",
+      "A nine-year-old boy named Joseph Meister",
+      "A rabbit"
+    ],
+    "correct": 2,
+    "points": 5,
+    "feedback": "A nine-year-old boy named Joseph Meister is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "Smallpox is caused by:",
+    "options": [
+      "Poliovirus",
+      "Rabies virus",
+      "Variola virus",
+      "HIV"
+    ],
+    "correct": 2,
+    "points": 5,
+    "feedback": "Variola virus is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "Immunoprophylaxis against viral illnesses includes the use of:",
+    "options": [
+      "Antibiotics only",
+      "Vaccines or antibody-containing preparations",
+      "Antivirals only",
+      "Disinfectants only"
+    ],
+    "correct": 1,
+    "points": 5,
+    "feedback": "Vaccines or antibody-containing preparations is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "Barley Yellow Dwarf Virus (BYDV) affects:",
+    "options": [
+      "Tobacco and tomato",
+      "Barley, oats, rye and wheat",
+      "Cotton and soybean",
+      "Maize only"
+    ],
+    "correct": 1,
+    "points": 5,
+    "feedback": "Barley, oats, rye and wheat is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "There is no single 'magic-bullet' approach to control viral infections because of:",
+    "options": [
+      "Lack of vaccines",
+      "Enormous variations in viruses and in their epidemiology and pathogenesis",
+      "High cost of drugs",
+      "All viruses are DNA viruses"
+    ],
+    "correct": 1,
+    "points": 5,
+    "feedback": "Enormous variations in viruses and in their epidemiology and pathogenesis is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "AIDS is caused by which virus?",
+    "options": [
+      "HBV",
+      "VZV",
+      "Human Immunodeficiency Virus (HIV)",
+      "Variola virus"
+    ],
+    "correct": 2,
+    "points": 5,
+    "feedback": "Human Immunodeficiency Virus (HIV) is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "Tomato Spotted Wilt Virus (TSWV) is transmitted by:",
+    "options": [
+      "Aphids",
+      "Thrips",
+      "Nematodes",
+      "Grasshoppers"
+    ],
+    "correct": 1,
+    "points": 5,
+    "feedback": "Thrips is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "Loeffler and Frosch identified the infectious agent of Foot-and-mouth disease as:",
+    "options": [
+      "A bacterium",
+      "An ultrafilterable, replication-competent particle smaller than a bacterium",
+      "A fungus",
+      "A toxin"
+    ],
+    "correct": 1,
+    "points": 5,
+    "feedback": "An ultrafilterable, replication-competent particle smaller than a bacterium is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "Rabies is commonly transmitted to humans through:",
+    "options": [
+      "Food and water",
+      "Droplet inhalation",
+      "Bite of infected animals like dogs and cats",
+      "Sexual contact"
+    ],
+    "correct": 2,
+    "points": 5,
+    "feedback": "Bite of infected animals like dogs and cats is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "The mode of transmission of Poliomyelitis is:",
+    "options": [
+      "Droplet inhalation",
+      "Through food and water",
+      "Bite of infected animal",
+      "Sexual contact"
+    ],
+    "correct": 1,
+    "points": 5,
+    "feedback": "Through food and water is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "Attenuation of a virus means:",
+    "options": [
+      "Making the virus more virulent",
+      "Making the virus less dangerous to the host while still inducing immunity",
+      "Killing the virus completely",
+      "Changing the virus host range"
+    ],
+    "correct": 1,
+    "points": 5,
+    "feedback": "Making the virus less dangerous to the host while still inducing immunity is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "Tobacco Mosaic Virus causes:",
+    "options": [
+      "Mottled appearance of leaves and dwarfing",
+      "Yellowing and dwarfing",
+      "Spindle tubers",
+      "Leaf curling"
+    ],
+    "correct": 0,
+    "points": 5,
+    "feedback": "Mottled appearance of leaves and dwarfing is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "Passive prophylaxis is used to protect individuals who:",
+    "options": [
+      "Have been vaccinated",
+      "Have been exposed to a disease and cannot be protected by vaccination",
+      "Are healthy",
+      "Have chronic bacterial infections"
+    ],
+    "correct": 1,
+    "points": 5,
+    "feedback": "Have been exposed to a disease and cannot be protected by vaccination is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "In 1890, Dmitri Ivanovsky was invited to study a disease in tobacco plantations of:",
+    "options": [
+      "France",
+      "Crimea, Eastern Europe",
+      "Netherlands",
+      "USA"
+    ],
+    "correct": 1,
+    "points": 5,
+    "feedback": "Crimea, Eastern Europe is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "Which virus can be transmitted from mother to baby through blood or after birth?",
+    "options": [
+      "Poliovirus",
+      "VZV",
+      "Hepatitis B Virus (HBV)",
+      "Rabies virus"
+    ],
+    "correct": 2,
+    "points": 5,
+    "feedback": "Hepatitis B Virus (HBV) is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "Beijerinck's term 'contagium vivum fluidum' means:",
+    "options": [
+      "Dead particle",
+      "Contagious living fluid",
+      "Bacterial spore",
+      "Poisonous substance"
+    ],
+    "correct": 1,
+    "points": 5,
+    "feedback": "Contagious living fluid is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "Fever, headache, sore throat, vomiting and loss of appetite are symptoms of:",
+    "options": [
+      "Rabies",
+      "Poliomyelitis",
+      "Hepatitis B",
+      "Smallpox"
+    ],
+    "correct": 1,
+    "points": 5,
+    "feedback": "Poliomyelitis is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "The Porcelain filter consists of:",
+    "options": [
+      "A glass tube with cotton",
+      "A permeable unglazed porcelain tube with a metal pipe inside",
+      "A paper membrane",
+      "A plastic syringe"
+    ],
+    "correct": 1,
+    "points": 5,
+    "feedback": "A permeable unglazed porcelain tube with a metal pipe inside is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "Leaf Curl Virus (LCV) affects crops like:",
+    "options": [
+      "Wheat and barley",
+      "Cotton, papaya, tomato, tobacco, potato and sweet potato",
+      "Tomato and pepper",
+      "Cucumber and bean"
+    ],
+    "correct": 1,
+    "points": 5,
+    "feedback": "Cotton, papaya, tomato, tobacco, potato and sweet potato is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "Chickenpox is caused by:",
+    "options": [
+      "HIV",
+      "Rabies virus",
+      "Varicella-Zoster Virus (VZV)",
+      "HBV"
+    ],
+    "correct": 2,
+    "points": 5,
+    "feedback": "Varicella-Zoster Virus (VZV) is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "Maize mosaic virus (MMV) is transmitted by:",
+    "options": [
+      "Aphids",
+      "Thrips",
+      "Infected leaves by an insect vector",
+      "Nematodes"
+    ],
+    "correct": 2,
+    "points": 5,
+    "feedback": "Infected leaves by an insect vector is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "Until the 19th century, infectious diseases were generally believed to be caused by:",
+    "options": [
+      "Bacteria",
+      "Viruses",
+      "Mysterious forces like poisonous substances in the environment",
+      "Fungi"
+    ],
+    "correct": 2,
+    "points": 5,
+    "feedback": "Mysterious forces like poisonous substances in the environment is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "The host for Rabies virus includes:",
+    "options": [
+      "Humans only",
+      "Foxes, wolves, skunks, bats, dogs, humans",
+      "Birds only",
+      "Chicken eggs only"
+    ],
+    "correct": 1,
+    "points": 5,
+    "feedback": "Foxes, wolves, skunks, bats, dogs, humans is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "Bud blight is caused by:",
+    "options": [
+      "Maize Mosaic Virus",
+      "Tobacco Ringspot Virus (TRSV)",
+      "Barley Yellow Dwarf Virus",
+      "Cucumber Mosaic Virus"
+    ],
+    "correct": 1,
+    "points": 5,
+    "feedback": "Tobacco Ringspot Virus (TRSV) is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "Ivanovsky discovered that after passing infected tobacco leaf solution through a Chamberland filter, the solution was still:",
+    "options": [
+      "Non-infectious",
+      "Capable of infecting more tobacco plants",
+      "Killed by heat",
+      "Colored"
+    ],
+    "correct": 1,
+    "points": 5,
+    "feedback": "Capable of infecting more tobacco plants is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "Charles Chamberland showed that porous porcelain could:",
+    "options": [
+      "Kill bacteria",
+      "Prevent the passage of fine particles in suspension",
+      "Multiply viruses",
+      "Stain cells"
+    ],
+    "correct": 1,
+    "points": 5,
+    "feedback": "Prevent the passage of fine particles in suspension is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "A symptom of Bud Blight includes:",
+    "options": [
+      "Mottled leaves",
+      "Yellowing and stunting",
+      "Stunted plants, bending of terminal buds, buds falling off",
+      "Spindle tubers"
+    ],
+    "correct": 2,
+    "points": 5,
+    "feedback": "Stunted plants, bending of terminal buds, buds falling off is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "The era of virus discovery began with the work of Louis Pasteur on:",
+    "options": [
+      "Smallpox",
+      "Rabies",
+      "Polio",
+      "Chickenpox"
+    ],
+    "correct": 1,
+    "points": 5,
+    "feedback": "Rabies is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "In 1885, Louis Pasteur attenuated the rabies virus by:",
+    "options": [
+      "Using killed virus",
+      "Serial passage in rabbits and harvesting from spinal cords",
+      "Using recombinant DNA",
+      "Using antibodies"
+    ],
+    "correct": 1,
+    "points": 5,
+    "feedback": "Serial passage in rabbits and harvesting from spinal cords is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "Stanley obtained TMV in the form of:",
+    "options": [
+      "Liquid culture",
+      "Pure crystals",
+      "Bacterial colonies",
+      "Spores"
+    ],
+    "correct": 1,
+    "points": 5,
+    "feedback": "Pure crystals is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "Twort samples remained infectious after passing through:",
+    "options": [
+      "Paper filter",
+      "A fine porcelain filter that would trap bacteria",
+      "Cotton wool",
+      "Heat"
+    ],
+    "correct": 1,
+    "points": 5,
+    "feedback": "A fine porcelain filter that would trap bacteria is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "Which type of vaccine uses a live virus that has been weakened?",
+    "options": [
+      "Killed vaccine",
+      "Attenuated live vaccine",
+      "Subunit vaccine",
+      "Toxoid vaccine"
+    ],
+    "correct": 1,
+    "points": 5,
+    "feedback": "Attenuated live vaccine is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "Hepatitis B is primarily transmitted by:",
+    "options": [
+      "Food and water",
+      "Respiratory droplets",
+      "Blood and body fluids",
+      "Mosquito bite"
+    ],
+    "correct": 2,
+    "points": 5,
+    "feedback": "Blood and body fluids is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "The first virus to be crystallized was:",
+    "options": [
+      "Tobacco Mosaic Virus",
+      "Poliovirus",
+      "Rabies virus",
+      "Influenza virus"
+    ],
+    "correct": 0,
+    "points": 5,
+    "feedback": "Tobacco Mosaic Virus is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "Which of the following is a DNA virus?",
+    "options": [
+      "Poliovirus",
+      "HIV",
+      "Rabies virus",
+      "Smallpox virus"
+    ],
+    "correct": 3,
+    "points": 5,
+    "feedback": "Smallpox virus is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "Killed viral vaccines require:",
+    "options": [
+      "Only one dose for life",
+      "Multiple doses and boosters",
+      "No adjuvant",
+      "Oral administration only"
+    ],
+    "correct": 1,
+    "points": 5,
+    "feedback": "Multiple doses and boosters is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "Varicella-Zoster Virus can cause:",
+    "options": [
+      "Polio",
+      "Rabies",
+      "Chickenpox and Shingles",
+      "AIDS"
+    ],
+    "correct": 2,
+    "points": 5,
+    "feedback": "Chickenpox and Shingles is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "Recombinant vaccines are produced using:",
+    "options": [
+      "Whole killed virus",
+      "Antigen produced by genetic engineering",
+      "Attenuated virus",
+      "Animal serum"
+    ],
+    "correct": 1,
+    "points": 5,
+    "feedback": "Antigen produced by genetic engineering is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "The main reservoir for Rabies virus in nature is:",
+    "options": [
+      "Wild animals",
+      "Humans",
+      "Birds",
+      "Water"
+    ],
+    "correct": 0,
+    "points": 5,
+    "feedback": "Wild animals is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "Which virus has an RNA genome and causes AIDS?",
+    "options": [
+      "HBV",
+      "VZV",
+      "Variola",
+      "HIV"
+    ],
+    "correct": 3,
+    "points": 5,
+    "feedback": "HIV is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "The goal of vaccination is to induce:",
+    "options": [
+      "Passive immunity only",
+      "Active immunity and memory cells",
+      "Antibiotic resistance",
+      "Sterilization"
+    ],
+    "correct": 1,
+    "points": 5,
+    "feedback": "Active immunity and memory cells is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "Which disease is prevented by MMR vaccine?",
+    "options": [
+      "Polio",
+      "Measles, Mumps, Rubella",
+      "Rabies",
+      "Hepatitis"
+    ],
+    "correct": 1,
+    "points": 5,
+    "feedback": "Measles, Mumps, Rubella is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "Which of the following is NOT a viral disease?",
+    "options": [
+      "Influenza",
+      "Dengue",
+      "Tuberculosis",
+      "Chickenpox"
+    ],
+    "correct": 2,
+    "points": 5,
+    "feedback": "Tuberculosis is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "The oral polio vaccine contains:",
+    "options": [
+      "Killed virus",
+      "Live attenuated virus",
+      "Protein subunit",
+      "DNA plasmid"
+    ],
+    "correct": 1,
+    "points": 5,
+    "feedback": "Live attenuated virus is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "Shingles occurs due to:",
+    "options": [
+      "New VZV infection",
+      "Bacterial infection",
+      "Reactivation of latent VZV",
+      "Fungal infection"
+    ],
+    "correct": 2,
+    "points": 5,
+    "feedback": "Reactivation of latent VZV is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "Which virus causes liver inflammation?",
+    "options": [
+      "Polio",
+      "Hepatitis B Virus",
+      "Rabies",
+      "TMV"
+    ],
+    "correct": 1,
+    "points": 5,
+    "feedback": "Hepatitis B Virus is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "Pasteurization is named after:",
+    "options": [
+      "Louis Pasteur",
+      "Dmitri Ivanovsky",
+      "Martinus Beijerinck",
+      "Wendell Stanley"
+    ],
+    "correct": 0,
+    "points": 5,
+    "feedback": "Louis Pasteur is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "Which is a plant viroid disease?",
+    "options": [
+      "TMV",
+      "PSTV",
+      "CMV",
+      "LCV"
+    ],
+    "correct": 1,
+    "points": 5,
+    "feedback": "PSTV is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "The main difference between bacteria and viruses is:",
+    "options": [
+      "Size",
+      "Viruses lack cellular structure and independent metabolism",
+      "Shape",
+      "Color"
+    ],
+    "correct": 1,
+    "points": 5,
+    "feedback": "Viruses lack cellular structure and independent metabolism is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "Which vaccine requires cold chain?",
+    "options": [
+      "Toxoid",
+      "Most live and killed viral vaccines",
+      "Antibiotics",
+      "Antisera"
+    ],
+    "correct": 1,
+    "points": 5,
+    "feedback": "Most live and killed viral vaccines is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "Which is NOT a route of HBV transmission?",
+    "options": [
+      "Blood transfusion",
+      "Mother to child",
+      "Sexual contact",
+      "Mosquito bite"
+    ],
+    "correct": 3,
+    "points": 5,
+    "feedback": "Mosquito bite is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "TMV was the first virus to be:",
+    "options": [
+      "Seen under light microscope",
+      "Crystallized",
+      "Cultured in bacteria",
+      "Sequenced"
+    ],
+    "correct": 1,
+    "points": 5,
+    "feedback": "Crystallized is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "Which virus causes 'spotted wilt' in tomato?",
+    "options": [
+      "TMV",
+      "CMV",
+      "TSWV",
+      "BYDV"
+    ],
+    "correct": 2,
+    "points": 5,
+    "feedback": "TSWV is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "Immunity lasting for years is usually:",
+    "options": [
+      "Passive",
+      "Active",
+      "Innate",
+      "Temporary"
+    ],
+    "correct": 1,
+    "points": 5,
+    "feedback": "Active is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "The first human rabies vaccine was developed in:",
+    "options": [
+      "1885",
+      "1892",
+      "1898",
+      "1915"
+    ],
+    "correct": 0,
+    "points": 5,
+    "feedback": "1885 is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "Which is used for immediate protection after exposure?",
+    "options": [
+      "Vaccine only",
+      "Passive immunization with antibodies",
+      "Antibiotics",
+      "Antivirals"
+    ],
+    "correct": 1,
+    "points": 5,
+    "feedback": "Passive immunization with antibodies is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "Which plant disease causes leaf curling?",
+    "options": [
+      "TMV",
+      "PSTV",
+      "LCV",
+      "CMV"
+    ],
+    "correct": 2,
+    "points": 5,
+    "feedback": "LCV is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "Which is true about viruses?",
+    "options": [
+      "They are killed by all antibiotics",
+      "They require host cells to replicate",
+      "They have mitochondria",
+      "They grow on agar"
+    ],
+    "correct": 1,
+    "points": 5,
+    "feedback": "They require host cells to replicate is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "Which is an RNA virus?",
+    "options": [
+      "Smallpox",
+      "Herpes",
+      "Poliovirus",
+      "HBV"
+    ],
+    "correct": 2,
+    "points": 5,
+    "feedback": "Poliovirus is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "The purpose of attenuation is to:",
+    "options": [
+      "Kill the virus",
+      "Reduce virulence but retain immunogenicity",
+      "Increase replication",
+      "Change host"
+    ],
+    "correct": 1,
+    "points": 5,
+    "feedback": "Reduce virulence but retain immunogenicity is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "Which is transmitted by food and water?",
+    "options": [
+      "Rabies",
+      "VZV",
+      "Poliovirus",
+      "HIV"
+    ],
+    "correct": 2,
+    "points": 5,
+    "feedback": "Poliovirus is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "Which scientist worked on tobacco mosaic disease?",
+    "options": [
+      "Pasteur",
+      "Ivanovsky",
+      "Koch",
+      "Fleming"
+    ],
+    "correct": 1,
+    "points": 5,
+    "feedback": "Ivanovsky is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "BCG vaccine is for:",
+    "options": [
+      "Tuberculosis",
+      "Polio",
+      "Smallpox",
+      "Rabies"
+    ],
+    "correct": 0,
+    "points": 5,
+    "feedback": "Tuberculosis is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "Which virus has a segmented RNA genome?",
+    "options": [
+      "Polio",
+      "Influenza",
+      "Rabies",
+      "HBV"
+    ],
+    "correct": 1,
+    "points": 5,
+    "feedback": "Influenza is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "Which is a symptom of Hepatitis B?",
+    "options": [
+      "Paralysis",
+      "Rash",
+      "Jaundice",
+      "Vesicles"
+    ],
+    "correct": 2,
+    "points": 5,
+    "feedback": "Jaundice is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "Viruses were discovered after bacteria because:",
+    "options": [
+      "They are larger",
+      "They pass through bacterial filters",
+      "They grow faster",
+      "They are easier to culture"
+    ],
+    "correct": 1,
+    "points": 5,
+    "feedback": "They pass through bacterial filters is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "Which scientist showed TMV could be crystallized?",
+    "options": [
+      "Beijerinck",
+      "Wendell Stanley",
+      "Ivanovsky",
+      "Pasteur"
+    ],
+    "correct": 1,
+    "points": 5,
+    "feedback": "Wendell Stanley is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "Which plant virus is transmitted by thrips?",
+    "options": [
+      "TMV",
+      "CMV",
+      "TSWV",
+      "BYDV"
+    ],
+    "correct": 2,
+    "points": 5,
+    "feedback": "TSWV is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "Which is a property of all viruses?",
+    "options": [
+      "Cellular",
+      "Obligate intracellular parasites",
+      "Have mitochondria",
+      "Grow on nutrient agar"
+    ],
+    "correct": 1,
+    "points": 5,
+    "feedback": "Obligate intracellular parasites is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "The first attenuated bacterial vaccine was for:",
+    "options": [
+      "Anthrax",
+      "Polio",
+      "Rabies",
+      "Smallpox"
+    ],
+    "correct": 0,
+    "points": 5,
+    "feedback": "Anthrax is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "Which virus causes 'bud blight'?",
+    "options": [
+      "CMV",
+      "TRSV",
+      "BYDV",
+      "LCV"
+    ],
+    "correct": 1,
+    "points": 5,
+    "feedback": "TRSV is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "Which disease causes vesicles filled with pus?",
+    "options": [
+      "Polio",
+      "Rabies",
+      "Chickenpox",
+      "Hepatitis"
+    ],
+    "correct": 2,
+    "points": 5,
+    "feedback": "Chickenpox is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "Which is a method of preventing viral plant diseases?",
+    "options": [
+      "Antibiotics",
+      "Using virus-free planting material",
+      "Antifungals",
+      "Irrigation"
+    ],
+    "correct": 1,
+    "points": 5,
+    "feedback": "Using virus-free planting material is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "Which virus is NOT transmitted by respiratory route?",
+    "options": [
+      "Influenza",
+      "Measles",
+      "Chickenpox",
+      "Hepatitis B"
+    ],
+    "correct": 3,
+    "points": 5,
+    "feedback": "Hepatitis B is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "Who proposed the term 'contagium vivum fluidum'?",
+    "options": [
+      "Ivanovsky",
+      "Beijerinck",
+      "Stanley",
+      "Twort"
+    ],
+    "correct": 1,
+    "points": 5,
+    "feedback": "Beijerinck is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "Which virus causes liver cancer in chronic cases?",
+    "options": [
+      "HIV",
+      "VZV",
+      "HBV",
+      "Polio"
+    ],
+    "correct": 2,
+    "points": 5,
+    "feedback": "HBV is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "The oral polio vaccine was developed by:",
+    "options": [
+      "Jonas Salk",
+      "Albert Sabin",
+      "Louis Pasteur",
+      "Edward Jenner"
+    ],
+    "correct": 1,
+    "points": 5,
+    "feedback": "Albert Sabin is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "Which is NOT a vaccine type?",
+    "options": [
+      "Live attenuated",
+      "Killed",
+      "Antibiotic",
+      "Subunit"
+    ],
+    "correct": 2,
+    "points": 5,
+    "feedback": "Antibiotic is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "Which virus has icosahedral symmetry and no envelope?",
+    "options": [
+      "HIV",
+      "Poliovirus",
+      "Herpes",
+      "HBV"
+    ],
+    "correct": 1,
+    "points": 5,
+    "feedback": "Poliovirus is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "Which disease causes neurological symptoms and death if untreated?",
+    "options": [
+      "Polio",
+      "Chickenpox",
+      "Rabies",
+      "Smallpox"
+    ],
+    "correct": 2,
+    "points": 5,
+    "feedback": "Rabies is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "Which plant virus causes spindle-shaped tubers?",
+    "options": [
+      "TMV",
+      "PSTV",
+      "CMV",
+      "LCV"
+    ],
+    "correct": 1,
+    "points": 5,
+    "feedback": "PSTV is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "Which is NOT a feature of viruses?",
+    "options": [
+      "Very small size",
+      "Replicate only in host cells",
+      "Sensitive to antibiotics",
+      "Contain DNA or RNA"
+    ],
+    "correct": 2,
+    "points": 5,
+    "feedback": "Sensitive to antibiotics is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "Who discovered bacteriophages?",
+    "options": [
+      "Pasteur",
+      "Frederick Twort",
+      "Stanley",
+      "Beijerinck"
+    ],
+    "correct": 1,
+    "points": 5,
+    "feedback": "Frederick Twort is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "Which virus causes 'yellow dwarf' in barley?",
+    "options": [
+      "TMV",
+      "CMV",
+      "BYDV",
+      "TSWV"
+    ],
+    "correct": 2,
+    "points": 5,
+    "feedback": "BYDV is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "Which vaccine provides herd immunity?",
+    "options": [
+      "Passive antibodies",
+      "Mass vaccination with live/killed vaccines",
+      "Antivirals",
+      "Disinfection"
+    ],
+    "correct": 1,
+    "points": 5,
+    "feedback": "Mass vaccination with live/killed vaccines is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "The Chamberland filter was made of:",
+    "options": [
+      "Plastic",
+      "Unglazed porcelain",
+      "Glass",
+      "Paper"
+    ],
+    "correct": 1,
+    "points": 5,
+    "feedback": "Unglazed porcelain is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "Which virus is transmitted by sexual contact?",
+    "options": [
+      "Polio",
+      "HIV",
+      "TMV",
+      "Rabies"
+    ],
+    "correct": 1,
+    "points": 5,
+    "feedback": "HIV is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "Which disease shows 'rash progressing to pustules'?",
+    "options": [
+      "Polio",
+      "Chickenpox",
+      "Smallpox",
+      "Rabies"
+    ],
+    "correct": 2,
+    "points": 5,
+    "feedback": "Smallpox is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "Which is the nucleic acid in TMV?",
+    "options": [
+      "DNA",
+      "RNA",
+      "Both",
+      "None"
+    ],
+    "correct": 1,
+    "points": 5,
+    "feedback": "RNA is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "Which is NOT controlled by vaccination?",
+    "options": [
+      "Smallpox",
+      "Polio",
+      "Measles",
+      "Common cold"
+    ],
+    "correct": 3,
+    "points": 5,
+    "feedback": "Common cold is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "In 1935, Wendell Stanley proved that TMV is composed of:",
+    "options": [
+      "DNA and lipid",
+      "Protein and ribonucleic acid (RNA)",
+      "Carbohydrate only",
+      "Protein only"
+    ],
+    "correct": 1,
+    "points": 5,
+    "feedback": "Protein and ribonucleic acid (RNA) is correct for this question based on the virology material."
+  },
+  {
+    "type": "multiple",
+    "text": "What is the basic structural unit of a complete virus particle called?",
+    "options": [
+      "Virion",
+      "Capsule",
+      "Plasmid",
+      "Spore"
+    ],
+    "correct": 0,
+    "points": 5,
+    "feedback": "A complete infectious virus particle is called a virion."
+  },
+  {
+    "type": "multiple",
+    "text": "Viruses generally reproduce by:",
+    "options": [
+      "Binary fission",
+      "Using host-cell machinery",
+      "Budding from bacteria only",
+      "Photosynthesis"
+    ],
+    "correct": 1,
+    "points": 5,
+    "feedback": "Viruses depend on host-cell machinery for replication."
+  },
+  {
+    "type": "multiple",
+    "text": "A virus that infects bacteria is called a:",
+    "options": [
+      "Viroid",
+      "Bacteriophage",
+      "Prion",
+      "Protozoan"
+    ],
+    "correct": 1,
+    "points": 5,
+    "feedback": "A bacteriophage is a virus that infects bacterial cells."
+  },
+  {
+    "type": "multiple",
+    "text": "Which molecule carries genetic information in a DNA virus?",
+    "options": [
+      "DNA",
+      "Protein only",
+      "Lipid only",
+      "Carbohydrate"
+    ],
+    "correct": 0,
+    "points": 5,
+    "feedback": "DNA viruses use DNA as their genetic material."
+  },
+  {
+    "type": "multiple",
+    "text": "Which molecule carries genetic information in an RNA virus?",
+    "options": [
+      "DNA only",
+      "RNA",
+      "Cellulose",
+      "Peptidoglycan"
+    ],
+    "correct": 1,
+    "points": 5,
+    "feedback": "RNA viruses use RNA as their genetic material."
+  },
+  {
+    "type": "multiple",
+    "text": "Which viral structure surrounds the viral genome in many viruses?",
+    "options": [
+      "Capsid",
+      "Ribosome",
+      "Mitochondrion",
+      "Cell wall"
+    ],
+    "correct": 0,
+    "points": 5,
+    "feedback": "The capsid is the protein coat surrounding the viral genome."
+  },
+  {
+    "type": "multiple",
+    "text": "An enveloped virus obtains its envelope mainly from:",
+    "options": [
+      "Host-cell membrane",
+      "Bacterial cell wall",
+      "Viral DNA",
+      "Nutrient agar"
+    ],
+    "correct": 0,
+    "points": 5,
+    "feedback": "Viral envelopes are commonly derived from host-cell membranes during viral release."
+  },
+  {
+    "type": "multiple",
+    "text": "A non-enveloped virus lacks a:",
+    "options": [
+      "Genome",
+      "Capsid",
+      "Lipid envelope",
+      "Protein"
+    ],
+    "correct": 2,
+    "points": 5,
+    "feedback": "Non-enveloped viruses do not possess a lipid envelope."
+  },
+  {
+    "type": "multiple",
+    "text": "Which term describes the ability of a virus to cause disease?",
+    "options": [
+      "Virulence",
+      "Osmosis",
+      "Fermentation",
+      "Photosynthesis"
+    ],
+    "correct": 0,
+    "points": 5,
+    "feedback": "Virulence describes the degree of pathogenicity or disease-causing ability."
+  },
+  {
+    "type": "multiple",
+    "text": "Which term describes the ability of a virus to stimulate an immune response?",
+    "options": [
+      "Immunogenicity",
+      "Filtration",
+      "Mutation only",
+      "Sterilization"
+    ],
+    "correct": 0,
+    "points": 5,
+    "feedback": "Immunogenicity is the capacity to induce an immune response."
+  },
+  {
+    "type": "multiple",
+    "text": "What is the main purpose of a vaccine?",
+    "options": [
+      "To induce protective immunity",
+      "To provide nutrition",
+      "To destroy all bacteria",
+      "To replace red blood cells"
+    ],
+    "correct": 0,
+    "points": 5,
+    "feedback": "Vaccines stimulate protective immune responses before or around exposure."
+  },
+  {
+    "type": "multiple",
+    "text": "Passive immunity is obtained by receiving:",
+    "options": [
+      "Preformed antibodies",
+      "Only memory cells",
+      "Antibiotics",
+      "Viral genomes"
+    ],
+    "correct": 0,
+    "points": 5,
+    "feedback": "Passive immunity results from receiving antibodies made elsewhere."
+  },
+  {
+    "type": "multiple",
+    "text": "Active immunity differs from passive immunity because active immunity:",
+    "options": [
+      "Produces an immune response in the recipient",
+      "Never produces antibodies",
+      "Always lasts only hours",
+      "Requires antibiotics"
+    ],
+    "correct": 0,
+    "points": 5,
+    "feedback": "Active immunity involves the recipient's own immune response and can generate memory."
+  },
+  {
+    "type": "multiple",
+    "text": "A live attenuated vaccine contains a virus that is:",
+    "options": [
+      "Weakened but still immunogenic",
+      "Always completely destroyed",
+      "Only a bacterial toxin",
+      "Only an antibody"
+    ],
+    "correct": 0,
+    "points": 5,
+    "feedback": "Attenuated viruses are weakened to reduce disease-causing ability while retaining immunogenicity."
+  },
+  {
+    "type": "multiple",
+    "text": "A killed or inactivated vaccine contains virus that is:",
+    "options": [
+      "Unable to replicate normally",
+      "Always more virulent",
+      "A bacterial spore",
+      "A living bacterium"
+    ],
+    "correct": 0,
+    "points": 5,
+    "feedback": "Inactivated vaccines use virus that has been rendered non-replicating."
+  },
+  {
+    "type": "multiple",
+    "text": "A subunit vaccine contains:",
+    "options": [
+      "Selected viral components or antigens",
+      "The entire live virus",
+      "Only antibiotics",
+      "Only host cells"
+    ],
+    "correct": 0,
+    "points": 5,
+    "feedback": "Subunit vaccines use selected antigenic components rather than the whole infectious virus."
+  },
+    {
     type: 'multiple',
-    text: 'Medical helminthology is concerned with the study of:',
-    options: ['Protozoan parasites', 'Parasitic worms', 'Fungi', 'Bacteria'],
+    text: 'A researcher observes that an infectious agent remains capable of causing disease after passing through a filter designed to retain bacteria. Which conclusion is most consistent with the observation?',
+    options: [
+      'The agent is definitely a bacterium',
+      'The agent may be smaller than bacteria',
+      'The agent must be a fungus',
+      'The agent is a bacterial toxin'
+    ],
     correct: 1,
     points: 5,
-    feedback: 'Medical helminthology focuses on parasitic worms and the diseases they cause in humans.'
+    feedback: 'Infectivity after passage through a bacteria-retaining filter provided early evidence that viruses were much smaller than bacteria.'
   },
   {
     type: 'multiple',
-    text: 'Helminths are generally:',
-    options: ['Unicellular organisms', 'Multicellular metazoa', 'Acellular organisms', 'Prokaryotes'],
-    correct: 1,
+    text: 'Which pairing correctly matches a scientist with a major contribution to early virology?',
+    options: [
+      'Wendell Stanley — crystallization of TMV',
+      'Frederick Twort — discovery of HBV',
+      'Dmitri Ivanovsky — development of MMR vaccine',
+      'Louis Pasteur — discovery of TMV crystals'
+    ],
+    correct: 0,
     points: 5,
-    feedback: 'Helminths are multicellular metazoan organisms, commonly referred to as parasitic worms.'
+    feedback: 'Wendell Stanley famously obtained Tobacco Mosaic Virus in crystalline form.'
   },
   {
     type: 'multiple',
-    text: 'Which of the following is NOT one of the three major groups of helminths?',
-    options: ['Trematodes', 'Nematodes', 'Cestodes', 'Protozoa'],
+    text: 'If a person receives antibodies produced by another individual rather than producing the antibodies themselves, what type of protection has been obtained?',
+    options: [
+      'Active immunity',
+      'Passive immunity',
+      'Innate immunity',
+      'Herd immunity'
+    ],
+    correct: 1,
+    points: 5,
+    feedback: 'Passive immunity occurs when preformed antibodies are transferred to an individual.'
+  },
+  {
+    type: 'multiple',
+    text: 'Which situation best illustrates active immunization?',
+    options: [
+      'Receiving antibody-containing serum after exposure',
+      'Receiving a vaccine that stimulates an immune response',
+      'Receiving antibiotics for a bacterial infection',
+      'Receiving antibodies from a mother'
+    ],
+    correct: 1,
+    points: 5,
+    feedback: 'Vaccination stimulates the recipient’s immune system to develop its own protective response.'
+  },
+  {
+    type: 'multiple',
+    text: 'A weakened virus is used in a vaccine primarily so that it can:',
+    options: [
+      'Cause severe disease',
+      'Stimulate immunity while having reduced virulence',
+      'Destroy antibodies',
+      'Become a bacterium'
+    ],
+    correct: 1,
+    points: 5,
+    feedback: 'Attenuation reduces virulence while attempting to retain the ability to stimulate protective immunity.'
+  },
+  {
+    type: 'multiple',
+    text: 'Which vaccine category contains selected viral antigens rather than the complete virus?',
+    options: [
+      'Subunit vaccine',
+      'Live attenuated vaccine',
+      'Killed whole-virus vaccine',
+      'Toxoid vaccine'
+    ],
+    correct: 0,
+    points: 5,
+    feedback: 'Subunit vaccines contain selected antigenic components of the pathogen.'
+  },
+  {
+    type: 'multiple',
+    text: 'Why may an inactivated viral vaccine require repeated doses or boosters?',
+    options: [
+      'It contains living bacteria',
+      'Additional doses can strengthen or maintain protective immunity',
+      'The vaccine changes into a live virus',
+      'It cannot stimulate any immune response'
+    ],
+    correct: 1,
+    points: 5,
+    feedback: 'Inactivated vaccines may require multiple doses or boosters to establish and maintain adequate immunity.'
+  },
+  {
+    type: 'multiple',
+    text: 'Which statement correctly distinguishes a virus from a typical cellular microorganism?',
+    options: [
+      'Viruses possess mitochondria',
+      'Viruses have independent cellular metabolism',
+      'Viruses depend on host cells for replication',
+      'Viruses reproduce by ordinary binary fission'
+    ],
+    correct: 2,
+    points: 5,
+    feedback: 'Viruses are obligate intracellular parasites and require host cells to replicate.'
+  },
+  {
+    type: 'multiple',
+    text: 'A substance is described as “contagium vivum fluidum” in the historical development of virology. Who is associated with this description?',
+    options: [
+      'Frederick Twort',
+      'Martinus Beijerinck',
+      'Wendell Stanley',
+      'Louis Pasteur'
+    ],
+    correct: 1,
+    points: 5,
+    feedback: 'Beijerinck used the term “contagium vivum fluidum” to describe the infectious agent.'
+  },
+  {
+    type: 'multiple',
+    text: 'Which historical observation most strongly challenged the idea that tobacco mosaic disease was caused by ordinary bacteria?',
+    options: [
+      'The disease affected plants',
+      'The infectious agent passed through a bacteria-retaining filter',
+      'The plants developed symptoms',
+      'The disease could spread between plants'
+    ],
+    correct: 1,
+    points: 5,
+    feedback: 'The ability of infectious tobacco sap to pass through a filter that retained bacteria was an important clue that the agent was smaller than bacteria.'
+  },
+  {
+    type: 'multiple',
+    text: 'Which combination contains only human viral diseases discussed in the source material?',
+    options: [
+      'Poliomyelitis, rabies and hepatitis B',
+      'Tuberculosis, rabies and polio',
+      'Anthrax, chickenpox and hepatitis B',
+      'Malaria, AIDS and rabies'
+    ],
+    correct: 0,
+    points: 5,
+    feedback: 'Poliomyelitis, rabies and hepatitis B are all viral diseases covered in the material.'
+  },
+  {
+    type: 'multiple',
+    text: 'A patient develops a disease following reactivation of a virus that remained latent after an earlier infection. Which virus from the material best fits this pattern?',
+    options: [
+      'Varicella-Zoster Virus',
+      'Poliovirus',
+      'Tobacco Mosaic Virus',
+      'Hepatitis B Virus'
+    ],
+    correct: 0,
+    points: 5,
+    feedback: 'Reactivation of latent VZV produces shingles.'
+  },
+  {
+    type: 'multiple',
+    text: 'Which disease represents a later manifestation of latent Varicella-Zoster Virus infection?',
+    options: [
+      'Poliomyelitis',
+      'Shingles',
+      'Smallpox',
+      'AIDS'
+    ],
+    correct: 1,
+    points: 5,
+    feedback: 'Shingles results from reactivation of latent Varicella-Zoster Virus.'
+  },
+  {
+    type: 'multiple',
+    text: 'A viral infection is acquired through contaminated food or water. Which disease in the source material is most characteristic of this route?',
+    options: [
+      'Rabies',
+      'Poliomyelitis',
+      'HIV/AIDS',
+      'Chickenpox'
+    ],
+    correct: 1,
+    points: 5,
+    feedback: 'Poliovirus is transmitted primarily through the fecal-oral route, including contaminated food and water.'
+  },
+  {
+    type: 'multiple',
+    text: 'Which transmission route would be least consistent with Hepatitis B based on the material?',
+    options: [
+      'Blood exposure',
+      'Mother-to-child transmission',
+      'Sexual contact',
+      'Mosquito bite'
+    ],
     correct: 3,
     points: 5,
-    feedback: 'The three major helminth groups are trematodes, cestodes, and nematodes. Protozoa are unicellular parasites, not helminths.'
+    feedback: 'The material identifies blood, body fluids, mother-to-child transmission and sexual contact as important HBV routes, not mosquito bites.'
   },
   {
     type: 'multiple',
-    text: 'Trematodes and cestodes are classified as:',
-    options: ['Roundworms', 'Flatworms', 'Protozoans', 'Arthropods'],
+    text: 'A person is bitten by an infected animal and later develops a severe viral neurological disease. Which infection is most likely?',
+    options: [
+      'Hepatitis B',
+      'Rabies',
+      'Poliomyelitis',
+      'Chickenpox'
+    ],
     correct: 1,
     points: 5,
-    feedback: 'Trematodes and cestodes are flatworms and belong to the phylum Platyhelminthes.'
+    feedback: 'Rabies is commonly transmitted through bites from infected animals and can cause severe neurological disease.'
   },
   {
     type: 'multiple',
-    text: 'Human exposure to geo-helminths commonly occurs through:',
-    options: ['Contaminated soil', 'Mosquito bites', 'Blood transfusion', 'Sexual contact'],
+    text: 'Which virus is correctly associated with an animal reservoir rather than humans being the primary natural reservoir?',
+    options: [
+      'Rabies virus',
+      'HIV',
+      'Poliovirus',
+      'Hepatitis B virus'
+    ],
     correct: 0,
     points: 5,
-    feedback: 'Geo-helminths are commonly transmitted through contact with or ingestion of material contaminated with infected soil.'
+    feedback: 'The source material identifies wild animals as the main natural reservoir for rabies virus.'
   },
   {
     type: 'multiple',
-    text: 'Schistosomes are classified as:',
-    options: ['Intestinal flukes', 'Blood flukes', 'Liver flukes', 'Lung flukes'],
-    correct: 1,
-    points: 5,
-    feedback: 'Schistosomes are blood flukes because the adult worms live in blood vessels.'
-  },
-  {
-    type: 'multiple',
-    text: 'A unique characteristic of Schistosoma among trematodes is that:',
-    options: ['It has no suckers', 'The sexes are separate', 'It lacks a digestive system', 'It has proglottids'],
-    correct: 1,
-    points: 5,
-    feedback: 'Unlike most trematodes, adult Schistosoma have separate male and female sexes.'
-  },
-  {
-    type: 'multiple',
-    text: 'The female Schistosoma lies within the:',
-    options: ['Oral sucker', 'Gynecophoral canal', 'Bile duct', 'Intestinal lumen'],
-    correct: 1,
-    points: 5,
-    feedback: 'The female Schistosoma is carried within the gynecophoral canal of the male.'
-  },
-  {
-    type: 'multiple',
-    text: 'Schistosoma mansoni primarily causes:',
-    options: ['Urinary schistosomiasis', 'Intestinal schistosomiasis', 'Pulmonary schistosomiasis', 'Cerebral schistosomiasis'],
-    correct: 1,
-    points: 5,
-    feedback: 'Schistosoma mansoni primarily causes intestinal schistosomiasis.'
-  },
-  {
-    type: 'multiple',
-    text: 'Schistosoma haematobium primarily causes:',
-    options: ['Vesical schistosomiasis', 'Intestinal schistosomiasis', 'Hepatic schistosomiasis', 'Pulmonary schistosomiasis'],
-    correct: 0,
-    points: 5,
-    feedback: 'Schistosoma haematobium primarily causes vesical or urinary schistosomiasis, affecting the urinary bladder region.'
-  },
-  {
-    type: 'multiple',
-    text: 'The main habitat of adult S. haematobium is the:',
-    options: ['Veins of the bladder', 'Small intestine', 'Bile ducts', 'Lungs'],
-    correct: 0,
-    points: 5,
-    feedback: 'Adult S. haematobium primarily inhabits veins associated with the urinary bladder.'
-  },
-  {
-    type: 'multiple',
-    text: 'The characteristic egg spine of S. mansoni is:',
-    options: ['Terminal', 'Lateral', 'Anterior', 'Bipolar'],
-    correct: 1,
-    points: 5,
-    feedback: 'S. mansoni eggs are characterized by a prominent lateral spine.'
-  },
-  {
-    type: 'multiple',
-    text: 'The egg of S. haematobium possesses a:',
-    options: ['Lateral spine', 'Terminal spine', 'Bipolar plug', 'Operculum'],
-    correct: 1,
-    points: 5,
-    feedback: 'S. haematobium eggs characteristically have a terminal spine.'
-  },
-  {
-    type: 'multiple',
-    text: 'The intermediate host of schistosomes is a:',
-    options: ['Fish', 'Snail', 'Pig', 'Cow'],
-    correct: 1,
-    points: 5,
-    feedback: 'Freshwater snails serve as the intermediate hosts for Schistosoma species.'
-  },
-  {
-    type: 'multiple',
-    text: 'The larval stage of Schistosoma that penetrates human skin is the:',
-    options: ['Miracidium', 'Sporocyst', 'Cercaria', 'Metacercaria'],
+    text: 'Which pair consists of viruses with different genome types as presented in the material?',
+    options: [
+      'Poliovirus and HIV',
+      'Variola virus and HBV',
+      'Poliovirus and Variola virus',
+      'HIV and rabies virus'
+    ],
     correct: 2,
     points: 5,
-    feedback: 'The cercaria is the free-swimming larval stage that penetrates human skin.'
+    feedback: 'Poliovirus is an RNA virus, whereas Variola virus is a DNA virus.'
   },
   {
     type: 'multiple',
-    text: 'Human infection with schistosomes commonly occurs during:',
-    options: ['Eating raw meat', 'Bathing or swimming in infected water', 'Eating raw vegetables', 'Mosquito bites'],
+    text: 'Which virus is associated with an RNA genome and the development of AIDS?',
+    options: [
+      'HBV',
+      'HIV',
+      'Variola virus',
+      'VZV'
+    ],
     correct: 1,
     points: 5,
-    feedback: 'People commonly acquire schistosomiasis when cercariae in infected freshwater penetrate the skin during bathing or swimming.'
+    feedback: 'HIV is an RNA virus and is the causative agent of AIDS.'
   },
   {
     type: 'multiple',
-    text: 'The miracidia of schistosomes penetrate the:',
-    options: ['Human skin', 'Snail host', 'Human intestine', 'Blood cells'],
+    text: 'Which viral infection discussed in the material is most strongly associated with chronic liver disease?',
+    options: [
+      'Rabies',
+      'Hepatitis B',
+      'Poliomyelitis',
+      'Chickenpox'
+    ],
     correct: 1,
     points: 5,
-    feedback: 'Schistosoma miracidia penetrate suitable freshwater snails, where further larval development occurs.'
+    feedback: 'Chronic hepatitis B infection can lead to serious liver disease and is associated with liver cancer.'
   },
   {
     type: 'multiple',
-    text: 'A common symptom of S. haematobium infection is:',
-    options: ['Haematuria', 'Severe diarrhoea', 'Cough', 'Perianal itching'],
-    correct: 0,
+    text: 'Which disease-virus relationship is INCORRECT?',
+    options: [
+      'Smallpox — Variola virus',
+      'Chickenpox — VZV',
+      'AIDS — HIV',
+      'Poliomyelitis — HBV'
+    ],
+    correct: 3,
     points: 5,
-    feedback: 'Haematuria, or blood in the urine, is a characteristic symptom of urinary schistosomiasis caused by S. haematobium.'
+    feedback: 'Poliomyelitis is caused by poliovirus, not Hepatitis B Virus.'
   },
   {
     type: 'multiple',
-    text: 'Schistosoma mansoni infection may produce:',
-    options: ['Dysentery', 'Haematuria only', 'Muscle paralysis', 'Vaginal discharge'],
-    correct: 0,
-    points: 5,
-    feedback: 'S. mansoni can cause intestinal disease and may produce dysentery-like symptoms.'
-  },
-  {
-    type: 'multiple',
-    text: 'The laboratory diagnosis of S. haematobium commonly involves examination of:',
-    options: ['Stool', 'Urine', 'Sputum', 'Blood'],
+    text: 'Which statement about Tobacco Mosaic Virus is supported by the source material?',
+    options: [
+      'It contains DNA as its nucleic acid',
+      'It was obtained in crystalline form',
+      'It causes human AIDS',
+      'It is transmitted by animal bites'
+    ],
     correct: 1,
     points: 5,
-    feedback: 'Urine is examined for the characteristic eggs of S. haematobium.'
+    feedback: 'Wendell Stanley obtained TMV in crystalline form, and the material identifies its nucleic acid as RNA.'
   },
   {
     type: 'multiple',
-    text: 'The treatment stated in the lecture for schistosomiasis is:',
-    options: ['Albendazole', 'Praziquantel', 'Mebendazole', 'Thiabendazole'],
+    text: 'A crop develops spindle-shaped, abnormally small potato tubers. Which agent should be suspected?',
+    options: [
+      'Tobacco Mosaic Virus',
+      'Potato Spindle Tuber Viroid',
+      'Tomato Spotted Wilt Virus',
+      'Barley Yellow Dwarf Virus'
+    ],
     correct: 1,
     points: 5,
-    feedback: 'Praziquantel is the treatment stated in the lecture for schistosomiasis.'
+    feedback: 'PSTV is associated with stunted growth and spindle-shaped, smaller potato tubers.'
   },
   {
     type: 'multiple',
-    text: 'Fasciolopsis buski is classified as a:',
-    options: ['Blood fluke', 'Intestinal fluke', 'Lung fluke', 'Nematode'],
+    text: 'Which vector-agent pairing is correctly matched according to the source material?',
+    options: [
+      'TSWV — thrips',
+      'CMV — thrips',
+      'TSWV — aphids',
+      'BYDV — animal bites'
+    ],
+    correct: 0,
+    points: 5,
+    feedback: 'The material identifies thrips as the vector for Tomato Spotted Wilt Virus.'
+  },
+  {
+    type: 'multiple',
+    text: 'A farmer notices a mosaic pattern and dwarfing in tobacco plants. Which virus is the most likely cause?',
+    options: [
+      'PSTV',
+      'TMV',
+      'HBV',
+      'VZV'
+    ],
     correct: 1,
     points: 5,
-    feedback: 'Fasciolopsis buski is an intestinal fluke that inhabits the intestinal tract.'
+    feedback: 'Tobacco Mosaic Virus is associated with mottled or mosaic leaves and dwarfing.'
   },
   {
     type: 'multiple',
-    text: 'Clonorchis sinensis is commonly known as the:',
-    options: ['Chinese liver fluke', 'Sheep liver fluke', 'Lung fluke', 'Blood fluke'],
+    text: 'Which crop group is particularly associated with Barley Yellow Dwarf Virus in the source material?',
+    options: [
+      'Barley, oats, rye and wheat',
+      'Cotton, papaya and tomato only',
+      'Potato and sweet potato only',
+      'Tobacco and cucumber only'
+    ],
     correct: 0,
     points: 5,
-    feedback: 'Clonorchis sinensis is commonly called the Chinese liver fluke.'
+    feedback: 'BYDV affects cereal crops including barley, oats, rye and wheat.'
   },
   {
     type: 'multiple',
-    text: 'Adult Clonorchis sinensis lives mainly in the:',
-    options: ['Urinary bladder', 'Bile ducts', 'Large intestine', 'Lungs'],
+    text: 'Which observation would provide evidence that an infectious agent is able to pass through a fine porcelain filter?',
+    options: [
+      'The filtered material loses all infectivity',
+      'The filtered material remains capable of causing infection',
+      'The filter becomes infected',
+      'The bacteria become larger'
+    ],
     correct: 1,
     points: 5,
-    feedback: 'Adult Clonorchis sinensis primarily inhabits the bile ducts.'
+    feedback: 'Continued infectivity after filtration was a key observation in the early discovery of viruses.'
   },
   {
     type: 'multiple',
-    text: 'Fasciola hepatica is commonly known as the:',
-    options: ['Chinese liver fluke', 'Sheep liver fluke', 'Blood fluke', 'Intestinal fluke'],
-    correct: 1,
-    points: 5,
-    feedback: 'Fasciola hepatica is commonly known as the sheep liver fluke.'
-  },
-  {
-    type: 'multiple',
-    text: 'Adult Fasciola hepatica mainly inhabits the:',
-    options: ['Large biliary passages and gall bladder', 'Urinary bladder', 'Small intestine', 'Blood vessels'],
+    text: 'Which historical scientist is correctly paired with rabies vaccine development?',
+    options: [
+      'Louis Pasteur',
+      'Dmitri Ivanovsky',
+      'Wendell Stanley',
+      'Frederick Twort'
+    ],
     correct: 0,
     points: 5,
-    feedback: 'Adult Fasciola hepatica mainly inhabits the large biliary passages and gall bladder.'
+    feedback: 'Louis Pasteur developed the early rabies vaccine and treated Joseph Meister in 1885.'
   },
   {
     type: 'multiple',
-    text: 'Paragonimus westermani is associated with:',
-    options: ['Lung disease', 'Urinary disease', 'Intestinal obstruction', 'Anaemia'],
+    text: 'What was significant about Pasteur’s work with the rabies virus?',
+    options: [
+      'He demonstrated that attenuation could be used to develop a vaccine',
+      'He discovered that rabies was caused by bacteria',
+      'He crystallized rabies virus',
+      'He developed the oral polio vaccine'
+    ],
     correct: 0,
     points: 5,
-    feedback: 'Paragonimus westermani is a lung fluke associated primarily with pulmonary disease.'
+    feedback: 'Pasteur used attenuation of rabies virus as part of the development of a protective vaccine.'
   },
   {
     type: 'multiple',
-    text: 'Nematodes are generally:',
-    options: ['Flat and segmented', 'Cylindrical and unsegmented', 'Leaf-shaped', 'Ribbon-like'],
-    correct: 1,
-    points: 5,
-    feedback: 'Nematodes are generally cylindrical, elongated, and unsegmented worms.'
-  },
-  {
-    type: 'multiple',
-    text: 'Nematodes possess a:',
-    options: ['Tough protective cuticle', 'Scolex', 'Rostellum', 'Proglottid'],
+    text: 'Which statement best explains why vaccination can protect a person before exposure to a virus?',
+    options: [
+      'It trains the immune system to recognize the relevant antigen',
+      'It permanently removes all microorganisms from the environment',
+      'It changes viruses into bacteria',
+      'It prevents the body from producing antibodies'
+    ],
     correct: 0,
     points: 5,
-    feedback: 'Nematodes have a tough protective cuticle covering their body.'
+    feedback: 'Vaccination prepares the immune system to recognize and respond to specific viral antigens.'
   },
   {
     type: 'multiple',
-    text: 'Unlike cestodes, nematodes possess:',
-    options: ['No digestive tract', 'A complete digestive tract', 'Only an oral opening', 'Only an anal opening'],
-    correct: 1,
-    points: 5,
-    feedback: 'Nematodes have a complete digestive tract with separate oral and anal openings, unlike cestodes.'
-  },
-  {
-    type: 'multiple',
-    text: 'The usual developmental stages of parasitic nematodes include:',
-    options: ['Egg, larva and adult', 'Egg, cyst and trophozoite', 'Cyst, adult and pupa', 'Larva and cyst only'],
+    text: 'Which approach would be most appropriate for immediate antibody-based protection following exposure to a viral disease?',
+    options: [
+      'Passive immunization',
+      'Attenuation',
+      'Plant sanitation',
+      'Viral crystallization'
+    ],
     correct: 0,
     points: 5,
-    feedback: 'The usual developmental stages of parasitic nematodes are egg, larva, and adult.'
-  },
-  {
-    type: 'multiple',
-    text: 'Ascaris lumbricoides is transmitted mainly through ingestion of:',
-    options: ['Filariform larvae', 'Embryonated eggs', 'Cercariae', 'Metacercariae'],
-    correct: 1,
-    points: 5,
-    feedback: 'Ascariasis is acquired mainly by ingesting embryonated Ascaris eggs.'
-  },
-  {
-    type: 'multiple',
-    text: 'Adult Ascaris lumbricoides primarily lives in the:',
-    options: ['Small intestine', 'Large intestine', 'Blood vessels', 'Urinary bladder'],
-    correct: 0,
-    points: 5,
-    feedback: 'Adult Ascaris lumbricoides worms primarily live in the small intestine.'
-  },
-  {
-    type: 'multiple',
-    text: 'During its life cycle, Ascaris larvae migrate through the:',
-    options: ['Liver and brain', 'Lungs', 'Kidney', 'Skin'],
-    correct: 1,
-    points: 5,
-    feedback: 'Ascaris larvae migrate through the lungs during their development before returning to the intestine.'
-  },
-  {
-    type: 'multiple',
-    text: 'Loeffler’s syndrome associated with Ascaris results from:',
-    options: ['Adult worms in the intestine', 'Larvae migrating through the lungs', 'Eggs in the liver', 'Worms in the blood vessels'],
-    correct: 1,
-    points: 5,
-    feedback: 'Loeffler’s syndrome is associated with the migration of Ascaris larvae through the lungs.'
-  },
-  {
-    type: 'multiple',
-    text: 'A common complication caused by adult Ascaris worms is:',
-    options: ['Intestinal obstruction', 'Haematuria', 'Hydatid cyst', 'Myocarditis'],
-    correct: 0,
-    points: 5,
-    feedback: 'Heavy infections with adult Ascaris worms can result in intestinal obstruction.'
-  },
-  {
-    type: 'multiple',
-    text: 'The two major species of human hookworms mentioned in the lecture are:',
-    options: ['A. lumbricoides and T. trichiura', 'A. duodenale and N. americanus', 'S. stercoralis and E. vermicularis', 'T. solium and T. saginata'],
-    correct: 1,
-    points: 5,
-    feedback: 'The two major human hookworms listed are Ancylostoma duodenale and Necator americanus.'
-  },
-  {
-    type: 'multiple',
-    text: 'The infective stage of hookworm is the:',
-    options: ['Rhabditiform larva', 'Filariform larva', 'Egg', 'Adult worm'],
-    correct: 1,
-    points: 5,
-    feedback: 'The filariform larva is the infective stage of hookworms.'
-  },
-  {
-    type: 'multiple',
-    text: 'Hookworm infection commonly occurs through:',
-    options: ['Skin penetration', 'Eating raw fish', 'Mosquito bites', 'Inhalation of eggs'],
-    correct: 0,
-    points: 5,
-    feedback: 'Hookworm filariform larvae commonly infect humans by penetrating the skin.'
-  },
-  {
-    type: 'multiple',
-    text: 'A major pathogenic effect of hookworms is:',
-    options: ['Iron deficiency anaemia', 'Hydatid cyst formation', 'Haematuria', 'Cerebral malaria'],
-    correct: 0,
-    points: 5,
-    feedback: 'Hookworms can cause iron deficiency anaemia due to blood loss associated with the feeding worms.'
-  },
-  {
-    type: 'multiple',
-    text: 'Strongyloides stercoralis may exist as:',
-    options: ['Only a parasite', 'A parasite or free-living organism', 'Only a free-living organism', 'Only a blood parasite'],
-    correct: 1,
-    points: 5,
-    feedback: 'Strongyloides stercoralis has both parasitic and free-living forms in its life cycle.'
-  },
-  {
-    type: 'multiple',
-    text: 'Infection by Strongyloides stercoralis occurs through:',
-    options: ['Skin penetration by filariform larvae', 'Eating raw beef', 'Mosquito bites', 'Ingestion of cysts'],
-    correct: 0,
-    points: 5,
-    feedback: 'Strongyloides infection occurs when infective filariform larvae penetrate the skin.'
-  },
-  {
-    type: 'multiple',
-    text: 'A characteristic feature of strongyloidiasis is:',
-    options: ['Autoinfection', 'Hydatid cyst formation', 'Haematuria', 'Biliary obstruction'],
-    correct: 0,
-    points: 5,
-    feedback: 'Autoinfection is a characteristic feature of Strongyloides stercoralis and allows infection to persist within the host.'
-  },
-  {
-    type: 'multiple',
-    text: 'The laboratory diagnosis of strongyloidiasis involves detecting:',
-    options: ['Eggs in urine', 'Rhabditiform larvae in stool', 'Adult worms in blood', 'Cercariae in stool'],
-    correct: 1,
-    points: 5,
-    feedback: 'Rhabditiform larvae are commonly detected in stool during laboratory diagnosis of strongyloidiasis.'
-  },
-  {
-    type: 'multiple',
-    text: 'Disseminated strongyloidiasis is particularly associated with:',
-    options: ['Immunocompromised individuals', 'Healthy adults only', 'Newborn babies only', 'Athletes'],
-    correct: 0,
-    points: 5,
-    feedback: 'Disseminated strongyloidiasis is particularly associated with immunocompromised individuals.'
-  },
-  {
-    type: 'multiple',
-    text: 'Tapeworms are classified under:',
-    options: ['Nematodes', 'Cestodes', 'Trematodes', 'Protozoa'],
-    correct: 1,
-    points: 5,
-    feedback: 'Tapeworms belong to the class of parasitic flatworms known as cestodes.'
-  },
-  {
-    type: 'multiple',
-    text: 'The anterior attachment organ of a tapeworm is called the:',
-    options: ['Scolex', 'Strobila', 'Proglottid', 'Cercaria'],
-    correct: 0,
-    points: 5,
-    feedback: 'The scolex is the anterior attachment organ of a tapeworm.'
-  },
-  {
-    type: 'multiple',
-    text: 'Tapeworms obtain nutrients mainly by:',
-    options: ['Feeding through a mouth', 'Absorbing nutrients through their body surface', 'Photosynthesis', 'Phagocytosis'],
-    correct: 1,
-    points: 5,
-    feedback: 'Tapeworms lack a conventional digestive tract and absorb nutrients through their body surface.'
-  },
-  {
-    type: 'multiple',
-    text: 'Hymenolepis nana is commonly known as the:',
-    options: ['Beef tapeworm', 'Dwarf tapeworm', 'Rat tapeworm', 'Dog tapeworm'],
-    correct: 1,
-    points: 5,
-    feedback: 'Hymenolepis nana is commonly known as the dwarf tapeworm.'
-  },
-  {
-    type: 'multiple',
-    text: 'Which of the following is the correct association?',
-    options: ['Echinococcus granulosus — hydatid disease', 'Taenia saginata — pork tapeworm', 'Hymenolepis nana — beef tapeworm', 'Diphyllobothrium latum — urinary schistosomiasis'],
-    correct: 0,
-    points: 5,
-    feedback: 'Echinococcus granulosus is associated with hydatid disease. The other associations are incorrect.'
-  },
-
-  {
-    type: 'multiple',
-    text: 'The unique feature of Schistosoma among trematodes is that the adult worms are:',
-    options: ['Hermaphroditic', 'Dioecious', 'Asexual', 'Segmented'],
-    correct: 1,
-    points: 5,
-    feedback: 'Schistosoma are dioecious, meaning the adult male and female worms are separate individuals.'
-  },
-  {
-    type: 'multiple',
-    text: 'In Schistosoma, the female worm is carried within the male’s:',
-    options: ['Oral sucker', 'Gynecophoral canal', 'Bile duct', 'Intestinal lumen'],
-    correct: 1,
-    points: 5,
-    feedback: 'The female Schistosoma is carried within the gynecophoral canal of the male.'
-  },
-  {
-    type: 'multiple',
-    text: 'The infective stage of Schistosoma that penetrates human skin is the:',
-    options: ['Miracidium', 'Cercaria', 'Egg', 'Sporocyst'],
-    correct: 1,
-    points: 5,
-    feedback: 'The cercaria is the infective Schistosoma stage that penetrates human skin.'
-  },
-  {
-    type: 'multiple',
-    text: 'The intermediate host of Schistosoma mansoni is a:',
-    options: ['Fish', 'Snail', 'Pig', 'Cow'],
-    correct: 1,
-    points: 5,
-    feedback: 'A freshwater snail serves as the intermediate host of Schistosoma mansoni.'
-  },
-  {
-    type: 'multiple',
-    text: 'The first larval stage that hatches from a Schistosoma egg is the:',
-    options: ['Cercaria', 'Miracidium', 'Metacercaria', 'Redia'],
-    correct: 1,
-    points: 5,
-    feedback: 'The miracidium is the first larval stage to hatch from a Schistosoma egg.'
-  },
-  {
-    type: 'multiple',
-    text: 'After entering freshwater, the Schistosoma miracidium primarily seeks:',
-    options: ['Humans', 'Snails', 'Fish', 'Mosquitoes'],
-    correct: 1,
-    points: 5,
-    feedback: 'The free-swimming miracidium seeks and penetrates a suitable snail intermediate host.'
-  },
-  {
-    type: 'multiple',
-    text: 'Human infection with Schistosoma occurs mainly when:',
-    options: ['Cercariae penetrate intact skin', 'Eggs are swallowed', 'Adult worms are eaten', 'Metacercariae are inhaled'],
-    correct: 0,
-    points: 5,
-    feedback: 'Human infection occurs mainly when cercariae in freshwater penetrate the skin.'
-  },
-  {
-    type: 'multiple',
-    text: 'S. mansoni adults primarily inhabit the:',
-    options: ['Veins of the intestine', 'Urinary bladder', 'Bile ducts', 'Lungs'],
-    correct: 0,
-    points: 5,
-    feedback: 'Adult S. mansoni primarily inhabit veins associated with the intestine.'
-  },
-  {
-    type: 'multiple',
-    text: 'S. haematobium adults primarily inhabit veins associated with the:',
-    options: ['Liver', 'Urinary bladder', 'Small intestine', 'Lungs'],
-    correct: 1,
-    points: 5,
-    feedback: 'S. haematobium adults primarily inhabit veins associated with the urinary bladder.'
-  },
-  {
-    type: 'multiple',
-    text: 'The characteristic egg of S. mansoni has a:',
-    options: ['Terminal spine', 'Lateral spine', 'Bipolar plug', 'Operculum'],
-    correct: 1,
-    points: 5,
-    feedback: 'S. mansoni eggs are characterized by a lateral spine.'
-  },
-  {
-    type: 'multiple',
-    text: 'The characteristic egg of S. haematobium has a:',
-    options: ['Lateral spine', 'Terminal spine', 'Hook', 'Operculum'],
-    correct: 1,
-    points: 5,
-    feedback: 'S. haematobium eggs characteristically possess a terminal spine.'
-  },
-  {
-    type: 'multiple',
-    text: 'A major pathogenic manifestation of S. haematobium infection is:',
-    options: ['Haematuria', 'Intestinal obstruction', 'Severe anaemia from blood loss', 'Hydatid cyst'],
-    correct: 0,
-    points: 5,
-    feedback: 'Haematuria is a major manifestation of urinary schistosomiasis caused by S. haematobium.'
-  },
-  {
-    type: 'multiple',
-    text: 'The pathology of schistosomiasis is largely associated with:',
-    options: ['Adult worms eating tissue', 'Host reaction to deposited eggs', 'Mosquito saliva', 'Larvae destroying red blood cells'],
-    correct: 1,
-    points: 5,
-    feedback: 'Much of the pathology of schistosomiasis results from the host inflammatory reaction to deposited eggs.'
-  },
-  {
-    type: 'multiple',
-    text: 'Diagnosis of urinary schistosomiasis commonly involves detecting eggs in:',
-    options: ['Urine', 'Sputum', 'Saliva', 'Skin scrapings'],
-    correct: 0,
-    points: 5,
-    feedback: 'Urinary schistosomiasis is commonly diagnosed by detecting characteristic eggs in urine.'
-  },
-  {
-    type: 'multiple',
-    text: 'A major preventive measure against schistosomiasis is:',
-    options: ['Avoiding contact with contaminated freshwater', 'Avoiding undercooked beef', 'Wearing gloves when handling pork', 'Avoiding raw vegetables only'],
-    correct: 0,
-    points: 5,
-    feedback: 'Avoiding contact with contaminated freshwater helps prevent exposure to infective Schistosoma cercariae.'
-  },
-
-  {
-    type: 'multiple',
-    text: 'Fasciola hepatica is commonly known as the:',
-    options: ['Blood fluke', 'Sheep liver fluke', 'Lung fluke', 'Intestinal fluke'],
-    correct: 1,
-    points: 5,
-    feedback: 'Fasciola hepatica is commonly known as the sheep liver fluke.'
-  },
-  {
-    type: 'multiple',
-    text: 'The adult Fasciola hepatica mainly inhabits the:',
-    options: ['Bile ducts', 'Urinary bladder', 'Blood vessels', 'Large intestine'],
-    correct: 0,
-    points: 5,
-    feedback: 'Adult Fasciola hepatica primarily inhabits the bile ducts.'
-  },
-  {
-    type: 'multiple',
-    text: 'The intermediate host of Fasciola hepatica is a:',
-    options: ['Fish', 'Snail', 'Pig', 'Dog'],
-    correct: 1,
-    points: 5,
-    feedback: 'A snail serves as the intermediate host in the life cycle of Fasciola hepatica.'
-  },
-  {
-    type: 'multiple',
-    text: 'The infective stage of Fasciola hepatica for humans is the:',
-    options: ['Miracidium', 'Cercaria', 'Metacercaria', 'Egg'],
-    correct: 2,
-    points: 5,
-    feedback: 'The metacercaria is the infective stage of Fasciola hepatica acquired by humans.'
-  },
-  {
-    type: 'multiple',
-    text: 'Humans commonly acquire fascioliasis by eating:',
-    options: ['Raw aquatic vegetation', 'Undercooked pork', 'Raw beef', 'Contaminated fish'],
-    correct: 0,
-    points: 5,
-    feedback: 'Humans commonly acquire fascioliasis by consuming raw aquatic vegetation contaminated with metacercariae.'
-  },
-  {
-    type: 'multiple',
-    text: 'After being swallowed, the metacercaria of Fasciola eventually reaches the:',
-    options: ['Liver and bile ducts', 'Urinary bladder', 'Brain', 'Large intestine'],
-    correct: 0,
-    points: 5,
-    feedback: 'After ingestion, Fasciola develops and eventually reaches the liver and bile ducts.'
-  },
-  {
-    type: 'multiple',
-    text: 'The pathogenic effects of adult Fasciola are mainly associated with damage to the:',
-    options: ['Bile ducts and liver', 'Skin', 'Lungs', 'Blood vessels'],
-    correct: 0,
-    points: 5,
-    feedback: 'Adult Fasciola mainly causes pathology involving the bile ducts and liver.'
-  },
-
-  {
-    type: 'multiple',
-    text: 'Ascaris lumbricoides is a:',
-    options: ['Trematode', 'Cestode', 'Nematode', 'Protozoan'],
-    correct: 2,
-    points: 5,
-    feedback: 'Ascaris lumbricoides is a parasitic nematode or roundworm.'
-  },
-  {
-    type: 'multiple',
-    text: 'The infective stage of Ascaris is the:',
-    options: ['Rhabditiform larva', 'Embryonated egg', 'Filariform larva', 'Adult worm'],
-    correct: 1,
-    points: 5,
-    feedback: 'The embryonated egg is the infective stage of Ascaris lumbricoides.'
-  },
-  {
-    type: 'multiple',
-    text: 'Humans acquire ascariasis mainly by:',
-    options: ['Skin penetration', 'Ingesting embryonated eggs', 'Eating infected beef', 'Mosquito bites'],
-    correct: 1,
-    points: 5,
-    feedback: 'Ascariasis is acquired mainly through ingestion of embryonated Ascaris eggs.'
-  },
-  {
-    type: 'multiple',
-    text: 'Adult Ascaris worms are mainly found in the:',
-    options: ['Small intestine', 'Large intestine', 'Blood vessels', 'Urinary bladder'],
-    correct: 0,
-    points: 5,
-    feedback: 'Adult Ascaris worms primarily inhabit the small intestine.'
-  },
-  {
-    type: 'multiple',
-    text: 'After hatching in the intestine, Ascaris larvae first migrate through the:',
-    options: ['Lungs', 'Brain', 'Kidneys', 'Skin'],
-    correct: 0,
-    points: 5,
-    feedback: 'After hatching, Ascaris larvae migrate through the circulation to the lungs as part of their life cycle.'
-  },
-  {
-    type: 'multiple',
-    text: 'The migration of Ascaris larvae through the lungs can cause:',
-    options: ['Loeffler’s syndrome', 'Hydatid disease', 'Haematuria', 'Elephantiasis'],
-    correct: 0,
-    points: 5,
-    feedback: 'Migration of Ascaris larvae through the lungs can produce Loeffler’s syndrome.'
-  },
-  {
-    type: 'multiple',
-    text: 'A major complication of heavy Ascaris infection is:',
-    options: ['Intestinal obstruction', 'Bladder cancer', 'Cerebral malaria', 'Skin ulceration'],
-    correct: 0,
-    points: 5,
-    feedback: 'Heavy Ascaris infections can cause intestinal obstruction due to accumulation of adult worms.'
-  },
-  {
-    type: 'multiple',
-    text: 'The diagnostic stage of Ascaris commonly detected in stool is the:',
-    options: ['Adult worm only', 'Egg', 'Filariform larva', 'Cercaria'],
-    correct: 1,
-    points: 5,
-    feedback: 'Ascaris eggs are commonly detected in stool during laboratory diagnosis.'
-  },
-
-  {
-    type: 'multiple',
-    text: 'The infective stage of hookworm is the:',
-    options: ['Egg', 'Filariform larva', 'Rhabditiform larva', 'Adult worm'],
-    correct: 1,
-    points: 5,
-    feedback: 'The filariform larva is the infective stage of hookworm.'
-  },
-  {
-    type: 'multiple',
-    text: 'Hookworm infection is commonly acquired through:',
-    options: ['Skin penetration', 'Ingestion of cysts', 'Mosquito bites', 'Eating raw fish'],
-    correct: 0,
-    points: 5,
-    feedback: 'Hookworm infection commonly occurs when infective larvae penetrate the skin.'
-  },
-  {
-    type: 'multiple',
-    text: 'After penetrating the skin, hookworm larvae are transported through the body and eventually reach the:',
-    options: ['Lungs and then intestine', 'Brain and then kidney', 'Liver and then bladder', 'Skin and then blood only'],
-    correct: 0,
-    points: 5,
-    feedback: 'After skin penetration, hookworm larvae migrate through the circulation to the lungs and eventually reach the intestine.'
-  },
-  {
-    type: 'multiple',
-    text: 'Adult hookworms primarily attach to the:',
-    options: ['Small intestinal mucosa', 'Urinary bladder', 'Lung tissue', 'Liver capsule'],
-    correct: 0,
-    points: 5,
-    feedback: 'Adult hookworms attach to the mucosa of the small intestine.'
-  },
-  {
-    type: 'multiple',
-    text: 'The major pathogenic effect of hookworms is:',
-    options: ['Iron-deficiency anaemia', 'Haematuria', 'Liver abscess', 'Intestinal cyst formation'],
-    correct: 0,
-    points: 5,
-    feedback: 'Hookworm infection can cause iron-deficiency anaemia due to chronic intestinal blood loss.'
-  },
-  {
-    type: 'multiple',
-    text: 'Hookworm anaemia results mainly from:',
-    options: ['Blood loss caused by feeding worms', 'Destruction of red cells by larvae', 'Failure of the liver to produce bile', 'Vitamin C deficiency'],
-    correct: 0,
-    points: 5,
-    feedback: 'Hookworm anaemia results mainly from blood loss caused by the feeding activity of adult worms.'
-  },
-
-  {
-    type: 'multiple',
-    text: 'Strongyloides stercoralis can exist as:',
-    options: ['Only a parasitic form', 'Parasitic and free-living forms', 'Only a free-living form', 'Only an adult form'],
-    correct: 1,
-    points: 5,
-    feedback: 'Strongyloides stercoralis has both parasitic and free-living forms.'
-  },
-  {
-    type: 'multiple',
-    text: 'The infective stage of Strongyloides is the:',
-    options: ['Rhabditiform larva', 'Filariform larva', 'Egg', 'Adult female'],
-    correct: 1,
-    points: 5,
-    feedback: 'The filariform larva is the infective stage of Strongyloides stercoralis.'
-  },
-  {
-    type: 'multiple',
-    text: 'The infective Strongyloides larva enters humans mainly through:',
-    options: ['Skin penetration', 'Ingestion of meat', 'Mosquito bite', 'Inhalation'],
-    correct: 0,
-    points: 5,
-    feedback: 'The infective Strongyloides larva enters the human body mainly by penetrating the skin.'
-  },
-  {
-    type: 'multiple',
-    text: 'Adult parasitic Strongyloides females are mainly located in the:',
-    options: ['Small intestine', 'Large intestine', 'Blood vessels', 'Urinary bladder'],
-    correct: 0,
-    points: 5,
-    feedback: 'Adult parasitic Strongyloides females are mainly located in the small intestine.'
-  },
-  {
-    type: 'multiple',
-    text: 'A special feature of the Strongyloides life cycle is:',
-    options: ['Autoinfection', 'Metacercarial development', 'Proglottid formation', 'Cyst formation'],
-    correct: 0,
-    points: 5,
-    feedback: 'Autoinfection is a special feature of the Strongyloides life cycle that allows infection to persist.'
-  },
-  {
-    type: 'multiple',
-    text: 'The diagnostic stage of Strongyloides commonly detected in stool is the:',
-    options: ['Egg', 'Rhabditiform larva', 'Filariform larva', 'Adult male'],
-    correct: 1,
-    points: 5,
-    feedback: 'Rhabditiform larvae are the diagnostic stage commonly detected in stool.'
-  },
-  {
-    type: 'multiple',
-    text: 'Disseminated strongyloidiasis occurs particularly in:',
-    options: ['Immunocompromised individuals', 'Healthy children only', 'People with malaria only', 'People who eat pork'],
-    correct: 0,
-    points: 5,
-    feedback: 'Disseminated strongyloidiasis is particularly associated with immunocompromised individuals.'
-  },
-  {
-    type: 'multiple',
-    text: 'Larvae migrating through the lungs in strongyloidiasis may cause:',
-    options: ['Pneumonia', 'Haematuria', 'Liver abscess', 'Intestinal obstruction'],
-    correct: 0,
-    points: 5,
-    feedback: 'Migration of Strongyloides larvae through the lungs may cause pulmonary symptoms including pneumonia.'
-  },
-
-  {
-    type: 'multiple',
-    text: 'Enterobius vermicularis is commonly known as the:',
-    options: ['Whipworm', 'Pinworm/threadworm', 'Hookworm', 'Giant roundworm'],
-    correct: 1,
-    points: 5,
-    feedback: 'Enterobius vermicularis is commonly known as the pinworm or threadworm.'
-  },
-  {
-    type: 'multiple',
-    text: 'Infection with Enterobius vermicularis commonly occurs through ingestion of:',
-    options: ['Larvated eggs', 'Filariform larvae', 'Metacercariae', 'Cercariae'],
-    correct: 0,
-    points: 5,
-    feedback: 'Enterobius infection commonly occurs when larvated eggs are ingested.'
-  },
-  {
-    type: 'multiple',
-    text: 'A characteristic symptom of enterobiasis is:',
-    options: ['Perianal itching', 'Haematuria', 'Severe jaundice', 'Cough with blood'],
-    correct: 0,
-    points: 5,
-    feedback: 'Perianal itching is a characteristic symptom of enterobiasis caused by Enterobius vermicularis.'
-  },
-  {
-    type: 'multiple',
-    text: 'Enterobius vermicularis infection is particularly common among:',
-    options: ['Children', 'Elderly people only', 'Cattle', 'Fish handlers only'],
-    correct: 0,
-    points: 5,
-    feedback: 'Enterobius vermicularis infection is particularly common among children.'
-  },
-  {
-    type: 'multiple',
-    text: 'The female Enterobius is distinguished by a:',
-    options: ['Straight posterior end', 'Curved posterior end', 'Lateral spine', 'Terminal spine'],
-    correct: 0,
-    points: 5,
-    feedback: 'The female Enterobius is distinguished in the source material by a straight posterior end.'
-  },
-  {
-    type: 'multiple',
-    text: 'A major mode of transmission of Enterobius vermicularis is:',
-    options: ['Faecal-oral transmission', 'Skin penetration', 'Mosquito transmission', 'Eating undercooked beef'],
-    correct: 0,
-    points: 5,
-    feedback: 'Enterobius vermicularis is commonly transmitted by the faecal-oral route through ingestion of infective eggs.'
+    feedback: 'Passive immunization supplies preformed antibodies and can provide relatively rapid protection after exposure.'
+  },
+  {
+    "type": "multiple",
+    "text": "Recombinant vaccine technology commonly uses:",
+    "options": [
+      "Genetic engineering",
+      "Bacterial filtration alone",
+      "Heat alone",
+      "Microscopy alone"
+    ],
+    "correct": 0,
+    "points": 5,
+    "feedback": "Recombinant vaccines can be produced by genetic engineering to make selected antigens."
+  },
+  {
+    "type": "multiple",
+    "text": "Why are booster doses used with some vaccines?",
+    "options": [
+      "To strengthen or maintain protective immunity",
+      "To make viruses more virulent",
+      "To cause infection deliberately",
+      "To replace the vaccine with antibiotics"
+    ],
+    "correct": 0,
+    "points": 5,
+    "feedback": "Boosters can reinforce immune memory and maintain protection."
+  },
+  {
+    "type": "multiple",
+    "text": "What is herd immunity?",
+    "options": [
+      "Population-level protection resulting from sufficient immunity in a community",
+      "Immunity found only in animals",
+      "Protection from antibiotics",
+      "A form of viral replication"
+    ],
+    "correct": 0,
+    "points": 5,
+    "feedback": "Herd immunity occurs when enough people are immune to reduce transmission within a population."
+  },
+  {
+    "type": "multiple",
+    "text": "The cold chain is important because many vaccines:",
+    "options": [
+      "Require controlled temperatures to remain effective",
+      "Must be frozen indefinitely",
+      "Contain bacteria that need food",
+      "Are made of glass only"
+    ],
+    "correct": 0,
+    "points": 5,
+    "feedback": "Temperature control helps preserve vaccine stability and effectiveness."
+  },
+  {
+    "type": "multiple",
+    "text": "Poliovirus belongs to which broad genome category?",
+    "options": [
+      "RNA virus",
+      "DNA virus",
+      "Viroid only",
+      "Bacterium"
+    ],
+    "correct": 0,
+    "points": 5,
+    "feedback": "Poliovirus is an RNA virus."
+  },
+  {
+    "type": "multiple",
+    "text": "Hepatitis B virus belongs to which broad genome category?",
+    "options": [
+      "DNA virus",
+      "RNA virus",
+      "Viroid",
+      "Bacteriophage only"
+    ],
+    "correct": 0,
+    "points": 5,
+    "feedback": "HBV is a DNA virus."
+  },
+  {
+    "type": "multiple",
+    "text": "HIV is classified as a:",
+    "options": [
+      "Retrovirus",
+      "Poxvirus",
+      "Viroid",
+      "Bacterium"
+    ],
+    "correct": 0,
+    "points": 5,
+    "feedback": "HIV is a retrovirus with an RNA genome and a reverse-transcription stage."
+  },
+  {
+    "type": "multiple",
+    "text": "Which disease is associated with Variola virus?",
+    "options": [
+      "Smallpox",
+      "Rabies",
+      "Polio",
+      "Hepatitis B"
+    ],
+    "correct": 0,
+    "points": 5,
+    "feedback": "Variola virus is the causative agent of smallpox."
+  },
+  {
+    "type": "multiple",
+    "text": "Which virus is associated with both chickenpox and shingles?",
+    "options": [
+      "Varicella-Zoster Virus",
+      "Poliovirus",
+      "HBV",
+      "TMV"
+    ],
+    "correct": 0,
+    "points": 5,
+    "feedback": "VZV causes chickenpox during primary infection and shingles after reactivation."
+  },
+  {
+    "type": "multiple",
+    "text": "Reactivation of latent VZV results in:",
+    "options": [
+      "Shingles",
+      "Polio",
+      "Hepatitis B",
+      "Smallpox"
+    ],
+    "correct": 0,
+    "points": 5,
+    "feedback": "Shingles results from reactivation of latent VZV."
+  },
+  {
+    "type": "multiple",
+    "text": "Which infection is classically associated with animal bites?",
+    "options": [
+      "Rabies",
+      "Polio",
+      "TMV infection",
+      "Hepatitis B"
+    ],
+    "correct": 0,
+    "points": 5,
+    "feedback": "Rabies is commonly transmitted through the bite of an infected animal."
+  },
+  {
+    "type": "multiple",
+    "text": "Which route is especially important for poliovirus transmission?",
+    "options": [
+      "Fecal-oral route through contaminated food or water",
+      "Mosquito bites",
+      "Animal bites",
+      "Sexual contact only"
+    ],
+    "correct": 0,
+    "points": 5,
+    "feedback": "Poliovirus is classically transmitted by the fecal-oral route."
+  },
+  {
+    "type": "multiple",
+    "text": "Which route is important in HBV transmission?",
+    "options": [
+      "Blood and body fluids",
+      "Contaminated soil only",
+      "Mosquito bites",
+      "Plant sap"
+    ],
+    "correct": 0,
+    "points": 5,
+    "feedback": "HBV can spread through infected blood and body fluids, including perinatal and sexual transmission."
+  },
+  {
+    "type": "multiple",
+    "text": "Which infection is associated with jaundice in the source material?",
+    "options": [
+      "Hepatitis B",
+      "Polio",
+      "Rabies",
+      "TMV"
+    ],
+    "correct": 0,
+    "points": 5,
+    "feedback": "Jaundice is a recognized symptom associated with hepatitis B infection."
+  },
+  {
+    "type": "multiple",
+    "text": "Which plant virus is associated with mottled leaves and dwarfing?",
+    "options": [
+      "Tobacco Mosaic Virus",
+      "PSTV",
+      "BYDV",
+      "TRSV"
+    ],
+    "correct": 0,
+    "points": 5,
+    "feedback": "TMV can produce a characteristic mosaic or mottled appearance and dwarfing."
+  },
+  {
+    "type": "multiple",
+    "text": "Which plant pathogen produces spindle-shaped potato tubers?",
+    "options": [
+      "Potato Spindle Tuber Viroid",
+      "TMV",
+      "TSWV",
+      "BYDV"
+    ],
+    "correct": 0,
+    "points": 5,
+    "feedback": "PSTV is a viroid associated with spindle-shaped and smaller potato tubers."
+  },
+  {
+    "type": "multiple",
+    "text": "Which plant virus affects barley, oats, rye and wheat?",
+    "options": [
+      "Barley Yellow Dwarf Virus",
+      "TMV",
+      "LCV",
+      "TSWV"
+    ],
+    "correct": 0,
+    "points": 5,
+    "feedback": "BYDV affects several cereal crops, including barley, oats, rye and wheat."
+  },
+  {
+    "type": "multiple",
+    "text": "Which plant virus is associated with leaf curl in the source material?",
+    "options": [
+      "Leaf Curl Virus",
+      "PSTV",
+      "BYDV",
+      "TRSV"
+    ],
+    "correct": 0,
+    "points": 5,
+    "feedback": "Leaf Curl Virus is associated with leaf-curl disease in the listed crops."
+  },
+  {
+    "type": "multiple",
+    "text": "Which plant virus is transmitted by aphids in the source material?",
+    "options": [
+      "Cucumber Mosaic Virus",
+      "TSWV",
+      "PSTV",
+      "LCV"
+    ],
+    "correct": 0,
+    "points": 5,
+    "feedback": "The source material identifies aphids as vectors of Cucumber Mosaic Virus."
+  },
+  {
+    "type": "multiple",
+    "text": "Which plant virus is transmitted by thrips in the source material?",
+    "options": [
+      "Tomato Spotted Wilt Virus",
+      "PSTV",
+      "BYDV",
+      "TMV"
+    ],
+    "correct": 0,
+    "points": 5,
+    "feedback": "The source material identifies thrips as vectors of TSWV."
+  },
+  {
+    "type": "multiple",
+    "text": "What did Ivanovsky's filtration experiment demonstrate?",
+    "options": [
+      "An infectious agent could pass through a filter that retained bacteria",
+      "Viruses were bacteria",
+      "All viruses were killed by filters",
+      "Plants could not transmit disease"
+    ],
+    "correct": 0,
+    "points": 5,
+    "feedback": "Ivanovsky found that filtered infectious tobacco sap could still transmit disease."
+  },
+  {
+    "type": "multiple",
+    "text": "What did Beijerinck's work contribute to virology?",
+    "options": [
+      "The concept of a filterable infectious agent and 'contagium vivum fluidum'",
+      "The discovery of antibiotics",
+      "The invention of the electron microscope",
+      "The discovery of DNA"
+    ],
+    "correct": 0,
+    "points": 5,
+    "feedback": "Beijerinck described the infectious agent as a 'contagium vivum fluidum.'"
+  },
+  {
+    "type": "multiple",
+    "text": "What did Wendell Stanley accomplish with TMV?",
+    "options": [
+      "He crystallized TMV",
+      "He discovered HIV",
+      "He developed the oral polio vaccine",
+      "He discovered rabies"
+    ],
+    "correct": 0,
+    "points": 5,
+    "feedback": "Stanley obtained TMV in crystalline form, supporting its chemical nature."
+  },
+  {
+    "type": "multiple",
+    "text": "What did Frederick Twort discover?",
+    "options": [
+      "Bacteriophages",
+      "HIV",
+      "HBV",
+      "PSTV"
+    ],
+    "correct": 0,
+    "points": 5,
+    "feedback": "Frederick Twort is credited in the source material with discovering bacteriophages."
+  },
+  {
+    "type": "multiple",
+    "text": "Why did filtration experiments help distinguish viruses from bacteria?",
+    "options": [
+      "Some infectious agents passed through bacteria-retaining filters",
+      "Viruses were visible to the naked eye",
+      "Bacteria caused all viral diseases",
+      "Viruses grew on nutrient agar"
+    ],
+    "correct": 0,
+    "points": 5,
+    "feedback": "Filterability provided early evidence that viruses differed from bacteria in size and biology."
+  },
+  {
+    "type": "multiple",
+    "text": "Which statement best describes an obligate intracellular parasite?",
+    "options": [
+      "It requires living host cells for replication",
+      "It grows independently on ordinary agar",
+      "It produces its own cells by binary fission",
+      "It never enters cells"
+    ],
+    "correct": 0,
+    "points": 5,
+    "feedback": "Viruses are obligate intracellular parasites because they depend on host cells for replication."
+  },
+  {
+    "type": "multiple",
+    "text": "Why are antibiotics generally ineffective against viruses?",
+    "options": [
+      "Viruses lack the bacterial cellular targets that many antibiotics attack",
+      "Viruses are too large",
+      "Antibiotics are vaccines",
+      "Viruses are fungi"
+    ],
+    "correct": 0,
+    "points": 5,
+    "feedback": "Antibiotics target bacterial processes and therefore do not directly treat viral replication."
+  },
+  {
+    "type": "multiple",
+    "text": "Which viral disease was associated with Pasteur's early vaccine work?",
+    "options": [
+      "Rabies",
+      "Hepatitis B",
+      "HIV/AIDS",
+      "Polio"
+    ],
+    "correct": 0,
+    "points": 5,
+    "feedback": "Pasteur's early vaccine work included attenuation and vaccination against rabies."
+  },
+  {
+    "type": "multiple",
+    "text": "Who received Pasteur's first human rabies vaccination?",
+    "options": [
+      "Joseph Meister",
+      "Wendell Stanley",
+      "Dmitri Ivanovsky",
+      "Frederick Twort"
+    ],
+    "correct": 0,
+    "points": 5,
+    "feedback": "Joseph Meister was the first human patient treated with Pasteur's rabies vaccine."
+  },
+  {
+    "type": "multiple",
+    "text": "Which vaccine is given orally for polio in the source material?",
+    "options": [
+      "Oral polio vaccine containing live attenuated virus",
+      "Killed rabies vaccine",
+      "MMR vaccine",
+      "BCG vaccine"
+    ],
+    "correct": 0,
+    "points": 5,
+    "feedback": "The source material identifies the oral polio vaccine as a live attenuated vaccine."
+  },
+  {
+    "type": "multiple",
+    "text": "Who developed the oral polio vaccine?",
+    "options": [
+      "Albert Sabin",
+      "Jonas Salk",
+      "Louis Pasteur",
+      "Edward Jenner"
+    ],
+    "correct": 0,
+    "points": 5,
+    "feedback": "Albert Sabin developed the oral polio vaccine."
+  },
+  {
+    "type": "multiple",
+    "text": "Which vaccine is associated with measles, mumps and rubella?",
+    "options": [
+      "MMR",
+      "BCG",
+      "OPV",
+      "Rabies vaccine"
+    ],
+    "correct": 0,
+    "points": 5,
+    "feedback": "MMR protects against measles, mumps and rubella."
+  },
+  {
+    "type": "multiple",
+    "text": "What disease is BCG vaccine intended to prevent?",
+    "options": [
+      "Tuberculosis",
+      "Polio",
+      "Rabies",
+      "Smallpox"
+    ],
+    "correct": 0,
+    "points": 5,
+    "feedback": "BCG is a vaccine used against tuberculosis."
+  },
+  {
+    "type": "multiple",
+    "text": "Which viral disease is characterized by pustular rash in the source material?",
+    "options": [
+      "Smallpox",
+      "Polio",
+      "Rabies",
+      "Hepatitis B"
+    ],
+    "correct": 0,
+    "points": 5,
+    "feedback": "The source material describes smallpox as having a rash progressing to pustules."
+  },
+  {
+    "type": "multiple",
+    "text": "Which viral infection can cause AIDS?",
+    "options": [
+      "HIV infection",
+      "HBV infection",
+      "VZV infection",
+      "TMV infection"
+    ],
+    "correct": 0,
+    "points": 5,
+    "feedback": "HIV infection can progress to AIDS."
+  },
+  {
+    "type": "multiple",
+    "text": "Which viral infection can lead to chronic liver disease and liver cancer?",
+    "options": [
+      "Hepatitis B",
+      "Polio",
+      "Rabies",
+      "Chickenpox"
+    ],
+    "correct": 0,
+    "points": 5,
+    "feedback": "Chronic HBV infection can lead to serious liver complications, including liver cancer."
+  },
+  {
+    "type": "multiple",
+    "text": "Which viral infection is commonly prevented by MMR vaccination?",
+    "options": [
+      "Measles",
+      "Rabies",
+      "Hepatitis B",
+      "Polio"
+    ],
+    "correct": 0,
+    "points": 5,
+    "feedback": "MMR vaccination includes protection against measles."
+  },
+  {
+    "type": "multiple",
+    "text": "What is attenuation primarily intended to change?",
+    "options": [
+      "Virulence",
+      "The existence of the genome",
+      "The host's species permanently",
+      "The virus into a bacterium"
+    ],
+    "correct": 0,
+    "points": 5,
+    "feedback": "Attenuation reduces virulence while aiming to preserve immunogenicity."
+  },
+  {
+    "type": "multiple",
+    "text": "A vaccine that contains antibodies rather than stimulating antibody production provides:",
+    "options": [
+      "Passive immunity",
+      "Active immunity",
+      "Innate immunity only",
+      "No immunity"
+    ],
+    "correct": 0,
+    "points": 5,
+    "feedback": "Antibody-containing preparations provide passive immunity."
+  },
+  {
+    "type": "multiple",
+    "text": "What is immunoprophylaxis?",
+    "options": [
+      "Prevention of disease using vaccination or antibody preparations",
+      "Treatment using antibiotics only",
+      "Plant disease diagnosis",
+      "Viral crystallization"
+    ],
+    "correct": 0,
+    "points": 5,
+    "feedback": "Immunoprophylaxis uses immune-based measures such as vaccines or antibodies to prevent disease."
+  },
+  {
+    "type": "multiple",
+    "text": "Which statement about viral genomes is correct?",
+    "options": [
+      "A virus contains DNA or RNA as its genome",
+      "Every virus contains both DNA and RNA as its genome",
+      "Viruses contain only protein",
+      "Viruses contain only lipids"
+    ],
+    "correct": 0,
+    "points": 5,
+    "feedback": "Viral genomes are made of either DNA or RNA."
+  },
+  {
+    "type": "multiple",
+    "text": "Which of the following is a plant viroid rather than a conventional virus?",
+    "options": [
+      "PSTV",
+      "HIV",
+      "Poliovirus",
+      "VZV"
+    ],
+    "correct": 0,
+    "points": 5,
+    "feedback": "PSTV is a viroid associated with potato spindle tuber disease."
+  },
+  {
+    "type": "multiple",
+    "text": "What is a major distinction between a viroid and a typical virus?",
+    "options": [
+      "A viroid is a small infectious RNA molecule without the typical viral protein coat",
+      "A viroid is always a bacterium",
+      "A viroid is an enveloped DNA virus",
+      "A viroid is a vaccine"
+    ],
+    "correct": 0,
+    "points": 5,
+    "feedback": "Viroids are infectious RNA molecules that lack the typical protein capsid of viruses."
+  },
+  {
+    "type": "multiple",
+    "text": "Which organism was filtered out by the original Chamberland porcelain filter?",
+    "options": [
+      "Bacteria",
+      "Viruses",
+      "Antibodies",
+      "DNA molecules"
+    ],
+    "correct": 0,
+    "points": 5,
+    "feedback": "The filter was designed to retain bacteria and larger suspended particles."
+  },
+  {
+    "type": "multiple",
+    "text": "What key observation suggested tobacco mosaic disease involved an agent smaller than bacteria?",
+    "options": [
+      "Filtered sap remained infectious",
+      "Filtered sap became sterile",
+      "The disease disappeared permanently",
+      "The filter produced antibodies"
+    ],
+    "correct": 0,
+    "points": 5,
+    "feedback": "Infectivity after bacteria-retaining filtration suggested a much smaller infectious agent."
+  },
+  {
+    "type": "multiple",
+    "text": "Which term best describes a virus's dependence on host cells?",
+    "options": [
+      "Obligate intracellular replication",
+      "Independent cellular metabolism",
+      "Binary fission",
+      "Photosynthesis"
+    ],
+    "correct": 0,
+    "points": 5,
+    "feedback": "Viruses must use host cells to replicate."
+  },
+  {
+    "type": "multiple",
+    "text": "Which of these is an example of a DNA virus from the source material?",
+    "options": [
+      "Variola virus",
+      "Poliovirus",
+      "HIV",
+      "Rabies virus"
+    ],
+    "correct": 0,
+    "points": 5,
+    "feedback": "Variola virus, the smallpox virus, is a DNA virus."
+  },
+  {
+    "type": "multiple",
+    "text": "Which of these is an RNA virus from the source material?",
+    "options": [
+      "Poliovirus",
+      "Variola virus",
+      "HBV",
+      "Smallpox virus"
+    ],
+    "correct": 0,
+    "points": 5,
+    "feedback": "Poliovirus is an RNA virus."
+  },
+  {
+    "type": "multiple",
+    "text": "Which virus in the source material has a segmented RNA genome?",
+    "options": [
+      "Influenza virus",
+      "Poliovirus",
+      "Rabies virus",
+      "HBV"
+    ],
+    "correct": 0,
+    "points": 5,
+    "feedback": "Influenza virus has a segmented RNA genome."
+  },
+  {
+    "type": "multiple",
+    "text": "Why can viral control be difficult?",
+    "options": [
+      "Viruses differ greatly in biology, epidemiology and pathogenesis",
+      "All viruses respond identically to one drug",
+      "All viruses are bacteria",
+      "Vaccines work against every virus"
+    ],
+    "correct": 0,
+    "points": 5,
+    "feedback": "The source material emphasizes the enormous variation among viruses and their diseases."
+  },
+  {
+    "type": "multiple",
+    "text": "Which prevention strategy is particularly relevant to viral plant diseases?",
+    "options": [
+      "Use virus-free planting material",
+      "Use antibiotics on all plants",
+      "Use animal vaccines on crops",
+      "Avoid all irrigation"
+    ],
+    "correct": 0,
+    "points": 5,
+    "feedback": "Virus-free planting material is a useful preventive strategy for plant viral diseases."
   }
-];
+]
+
+;
 
 
 
@@ -1051,13 +2821,13 @@ function updateQuizMeta() {
 
   // Update UI
   document.querySelector('.quiz-category').textContent =
-    'Module 4 · Medical Parasitology';
+    'Module 4 · Virology';
 
   document.querySelector('.quiz-title').textContent =
-    'Medical Helminthology & Parasitic Worms';
+    'Virology, Viral Diseases & Immunoprophylaxis';
 
   document.querySelector('.quiz-description').textContent =
-    'Test your understanding of medically important helminths, including trematodes, nematodes, and cestodes, their life cycles, transmission, clinical manifestations, diagnosis, and prevention.';
+    'Test your understanding of viruses, their structure, replication, transmission, major human and plant viral diseases, viral discovery, vaccines, immunity, immunoprophylaxis, and methods used to prevent and control viral infections.';
 
   const stats = document.querySelectorAll('.quiz-stats .stat-item span');
 
@@ -1065,7 +2835,7 @@ function updateQuizMeta() {
   stats[0].innerHTML =
     `<strong>${minutes} minutes</strong> estimated`;
 
-
+  // ❓ Questions
   stats[1].innerHTML =
     `<strong>${totalQuestions} questions</strong>`;
 
